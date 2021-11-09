@@ -1,0 +1,44 @@
+body {
+			margin: 0;
+			font-family: Arial, Helvetica, sans-serif;
+			background-color:#FFEBCD;
+			color: #00000;
+		}
+
+		.topnav {
+			overflow: hidden;
+			background-color: #F5B041;
+		}
+
+		.topnav a {
+			float: left;
+			color: #f2f2f2;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-size: 18px;
+			width: 17%; /* Five links of equal widths */
+		}
+
+		.topnav a:hover {
+			background-color: #F5B041;
+			color: orange;
+		}
+
+		.topnav a.active {
+			background-color: #FFFFFF;
+			color: orange;
+		}
+		h1,h5 {
+		       font-size: 110%;
+		       color: #D2691E;
+		}
+		h2{
+		   font-size:100%;
+		   color:black ;
+		}
+		p {
+		   font-size: 90%;
+		   color: #D2691E;
+		}
+				
