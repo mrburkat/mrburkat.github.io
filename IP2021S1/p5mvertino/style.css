@@ -34,3 +34,64 @@ body {
 h2,h3 {
   font-size:90%;
 }
+ table {
+  margin-left: 20px;
+  margin-right: 20px;
+  border: thin solid white;
+  caption-side: bottom;
+  border-collapse: collapse;
+}
+td, th {
+  border: thin dotted white;
+  padding: 5px;
+}
+caption {
+  font-style: italic;
+  padding-top: 8px;
+}
+.center {
+  text-align: center;
+}
+.right {
+  text-align: right;
+}
+th {
+  background-color: #C70039;
+}
+.cellcolor {
+  background-color: #C70039;
+}
+p {
+  margin: 80px;
+{
+
+form {
+  display: table;
+  padding: 10px;
+  border: thin dotted #7e7e7e;
+  background-color: #789FFF;
+  margin: 20px;
+}
+
+form textarea {
+  width: 500px;
+  height: 50px;
+}
+
+div.tablerow {
+  display: table-row;
+}
+
+div.tablerow p {
+  display: table-cell;
+  vertical-align: top;
+  padding: 3px;
+}
+
+div.tablerow p:first-child {
+  text-align: right;
+}
+
+p.heading {
+  font-weight: bold;
+}

@@ -6,6 +6,8 @@
 	 <link type="text/css" rel="stylesheet" href="style.css">
 
 </head>
+<!--an about page. basic information about Buffalo -->
+
 <body>
 	  <img src="Assets/Banner1.jpg">
 	  <div class="topnav">
@@ -14,14 +16,61 @@
 		<a href="gallery.html">Gallery</a>
 		<a href="table.html">Table</a>
     <a class="active" href="form.html">Form</a>
-
 	</div>
 
 	<div style="padding-left:16px">
 		<h2>Form</h2>
-		<p>Some content..</p>
 	</div>
 
+	  <form action="thankyou.html" method="GET">
+
+	<div class="tablerow">
+	  <p>Name</p>
+	   <p>
+	 	   <input type=text name="Name">
+	</div>
+
+<div class="tablerow">
+  <p>Shirt size</p>
+  <p>
+  <select name="characters">
+  <option value="Youth Small">Youth Small</option>
+    <option value="Youth Medium">Youth Medium</option>
+  <option value="Youth Large">Youth Large</option>
+  <option value="Adult Small">Adult Small</option>
+    <option value="Adult Medium">Adult Medium</option>
+  <option value="Adult Large">Adult Large</option>
+  </select>
+  </p>
+</div>
+
+<div class="tablerow">
+  <p>Type of Shirt</p>
+  <p> <input type="checkbox" name="style" value="shortsleeve">
+  <input type="checkbox" name="style" value="longsleeve">
+  </p>
+</div>
+  
+  <div class="tablerow">
+  <p>Number of shirts</p>
+  <p> <input type="number" min="0" max="20"> </p>
+</div>
+
+<div class="tablerow">
+  <p>Comments</p>
+  <p>
+  <textarea name="comments" rows="10" cols="48"></textarea>
+</p>
+</div>
+
+<div class="tablerow">
+  <p>Submit</p>
+  <p>
+    <input type="submit">
+  </p>
+  </div>
+
+</form>
 </body>
 </html>
 
