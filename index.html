@@ -2,7 +2,6 @@
 <html>
 <head>
   <link type="text/css" rel="stylesheet" href="style.css">
-  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Welcome</title>
 </head>
@@ -26,54 +25,6 @@
 		<h2>Enjoy a Visit to Iceland</h2>
 		<p>Discover the Wonder</p>
 	</div>
-
-<div id="myChart" style="width:100%; max-width:600px; height:500px;"></div>
-
-<script>
-google.charts.load('current', {'packages':['corechart']});
-google.charts.setOnLoadCallback(drawChart);
-
-function drawChart() {
-  
-var data = google.visualization.arrayToDataTable([
-  
-  ['Month', 'Temperature (F)', { role: 'style' }],
-  
-  ['January',-50, 'color: darkblue'],
-  
-  ['February',-40, 'color: darkblue'],
-  
-  ['March',-30, 'color: blue'],
-  
-  ['April',-20, 'color: blue'],
-
-  ['May',-10, 'color: white'],
-
-  ['June',5, 'color: orange'],
-  
-  ['July',10, 'color: red'],
-  
-  ['August',5, 'color: orange'],
-  
-  ['September',-10, 'color: white'],
-
-  ['October',-20, 'color: blue'],
-
-  ['November',-30, 'color: darkblue'],
-
-  ['December',-40, 'color: darkblue']
-]);
-
-var options = {
-  title:'Temperatures per Month (F)',
-  backgroundColor: '#789ABC'
-};
-
-var chart = new google.visualization.BarChart(document.getElementById('myChart'));
-  chart.draw(data, options);
-}
-</script>
-
 
 </body>
 </html>
