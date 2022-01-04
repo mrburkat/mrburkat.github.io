@@ -4,6 +4,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Home</title>
 	    <link type="text/css" rel="stylesheet" href="style.css">
+	    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 </head>
 <!-- The index.html page provides the information of travel guidence-->
 <body>
@@ -35,7 +36,40 @@
 		
 		achieve their life goal.</p>
 	</div>
+	  <div id="myChart" style="width:100%; max-width:600px; height:500px;"></div>
+	<script>
+google.charts.load('current',{packages:['corechart']});
+google.charts.setOnLoadCallback(drawChart);
 
+function drawChart() {
+// Set Data
+var data = google.visualization.arrayToDataTable([
+  ['month', 'average lowest temperature','average highest tempature'],
+  ['1',      -4,                 2],
+  ['2',      -2,                 5],
+  ['3',       3,                 10],
+  ['4',       9,                 17],
+  ['5',       15,                22],
+  ['6',       19,                26],
+  ['7',       22,                27],
+  ['8',       21,                26],
+  ['9',       16,                23],
+  ['10',      11,                10],
+  ['11',      3,                 10],
+  ['12',      -3,                4]
+]);
+// Set Options
+var options = {
+  title: 'Temperatures(°C)',
+  hAxis: {title: 'months'},
+  vAxis: {title: 'Tempatures'},
+  legend: 'none'
+};
+// Draw
+var chart = new google.visualization.LineChart(document.getElementById('myChart'));
+chart.draw(data, options);
+}
+</script>
 </body>
 </html>
 
