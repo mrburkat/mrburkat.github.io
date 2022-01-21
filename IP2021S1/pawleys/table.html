@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+		<meta charset="utf-8">
+		<title> Visitor Reviews</title>
+			<link type="text/css" rel="stylesheet" href="style.css">
+	</head>
+  <body><center>
+<center><img src="assets/banner1.jpg"></center>
+	  <h1> Visitor Reviews </h1>
+	  <!-- This page will have a 3-5 visitor reviews from people that have gone to Pawleys Island and loved it.-->
+	  		<!-- Create a Menu -->
+<div class="topnav">
+			<a href="index.html">Home Page</a>
+			<a href="list.html">Island Bucket List</a>
+			<a href="gallery.html">Gallery</a>
+			<a href="table.html">Visitor Reviews</a>
+			<a href="form.html">Book a House!</a>
+</div>
+		
+<table>
+  
+  
+  <caption>
+    The overall reviews of beach houses at Pawleys Island.
+  </caption>
+  <tr class="cellcolor">
+    <th>House</th>
+    <th>Cost of Living (per week)</th>
+    <th>Type of House</th>
+    <th>Overall Ratings (out of 5)</th>
+  </tr>
+  <tr>
+    <td>The Nut House</td>
+    <td>$1,000</td>
+    <td>Stone Build</td>
+    <td>4/5</td>
+  <tr class="cellcolor">
+    <td>Ocean View</td>
+    <td>$2,000</td>
+    <td>Country Shique</td>
+    <td>5/5</td>
+  </tr>
+  <tr>
+    <td>Palm Tree</td>
+    <td>$2,500</td>
+    <td>Beach Rustic</td>
+    <td>4.5/5</td>
+  </tr>
+  <tr class="cellcolor">
+    <td>Coastal Cottage</td>
+    <td>1,200</td>
+    <td>Beach House Build</td>
+    <td>5/5</td>
+  </tr>
+</table>
+	 	<div id="myChart" style="width:100%; max-width:600px; height:500px;"></div>
+
+<div id="myChart" style="width:100%; max-width:600px; height:500px;"></div>
+
+<script>
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+function drawChart() {
+var data = google.visualization.arrayToDataTable([
+  ['Reviews', 'stars'],
+  ['The Smiths',5],
+  ['The Andersons',5],
+  ['The Brewers',4],
+  ['The Gonzalez',5],
+  ['The Roberts',5]
+]);
+
+var options = {
+  title:'Pawleys Visitor Reviews'
+};
+
+var chart = new google.visualization.BarChart(document.getElementById('myChart'));
+  chart.draw(data, options);
+}
+</script>
+	 	
+	</center> </body>
+</html>
