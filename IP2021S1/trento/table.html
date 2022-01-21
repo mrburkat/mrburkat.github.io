@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Trento, Italy</title>
+	<link type="text/css" rel="stylesheet" href="style.css">
+	  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['line']});
+      google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+
+var data = google.visualization.arrayToDataTable([
+  ['Month', 'Highs', 'Lows'],
+        ['Jan',  47, 39],
+        ['Feb',  46, 38],
+        ['Mar',  50,  41],
+        ['Apr',  55,   46],
+        ['May',  64, 54],
+        ['Jun',  73, 60],
+        ['Jul',   77, 65],
+        ['Aug',   76, 65],
+        ['Sept',  69, 59],
+        ['Oct',  62, 53],
+        ['Nov', 53, 45],
+        ['Dec',  49,  40]
+      ]);
+
+      var options = {
+        chart: {
+          title: 'Monthly Weather In Trento',
+          subtitle: 'Temperature in Fahrenheit'
+        },
+      };
+
+      var chart = new google.charts.Line(document.getElementById('linechart_material'));
+
+      chart.draw(data, google.charts.Line.convertOptions(options));
+    }
+    </script>
+</head>
+<body bgcolor="000000">
+  <a target="_blank" rel="noopener noreferrer" href="https://www.goworldtravel.com/wp-content/uploads/2013/07/Trentino-Italy-Featured-image-from-Pixabay.jpg"><img src="assets/Banner1.jpg" alt="Trento Website Banner" height="100" width="100%"></a>
+  <header style="position: relative; top: -10px;">
+	<div class="topnav">
+		<a href="index.html">Home</a>
+		<a href="list.html">Places to Visit</a>
+		<a href="gallery.html">Picures</a>
+		<a href="form.html">Contact</a>
+		<a class="active" href="table.html">Info</a>
+	</div>
+<center>
+  
+  <div id="linechart_material" style="width: 900px; height: 350px"></div>
+
+</center>
+ 
+<font color="white">
+<hr />
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a>
+Copyright &copy; <a class="extlink" href="mailto:adeltoro23@pvipanther.net">Lex Del Toro</a>, 2021-2021.<br />
+All content is under the <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> license unless proven otherwise.
+</font>
+</header>
+</body>
+</html>

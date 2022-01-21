@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Table</title>
+<link type="text/css" rel="stylesheet" href="style.css">
+</head>
+<body>
+  <img src="assets/MyLastBanner.jpg">
+  <!--this will include four tables, all four seasons, with certain things-->
+	
+
+	<div class="topnav">
+		<a href="index.html" class="active">Home</a>
+		<a href="list.html">Activities</a>
+		<a href="table.html">Data</a>
+		<a href="gallery.html">Gallery</a>
+		<a href="form.html">Reach Out</a>
+	</div>
+	
+<div style="padding-left:16px">
+	<h1>Interesting Lake Placid Data</h1>
+	
+<h2>The Ironman Table</h2>
+<p>The Ironman is held almost every year at Lake Placid. The 2.4 mile swim goes across Mirror Lake. Followed right after is the 112 mile bike ride that goes across the mountain roads around Lake Placid. Then finally, a 26.2 mile run to finish it off. Each of the highlighted boxes are the best times in each event and the overall event.</p>
+<center>
+<table>
+  <caption>Come see who will be the next Ironman!</caption>
+  <tr>
+    <th>Year</th>
+    <th>Name & Age</th>
+    <th>Total Time</th>
+    <th>Swim Time</th>
+    <th>Bike Time</th>
+    <th>Run Time</th>
+  </tr>
+  <tr class="tablecolor">
+    <td>2021</td>
+    <td>Baizhan Kanafin (age 40)</td>
+    <td>10:31:56</td>
+    <td class="winnercolor">1:01:14</td>
+    <td>5:22:58</td>
+    <td>3:54:45</td>
+  </tr>
+  <tr class="tablecolor">
+    <td>2018</td>
+    <td>Jed Vanichkachorn (age 49)</td>
+    <td>11:34:35</td>
+    <td>1:14:10</td>
+    <td>6:10:52</td>
+    <td>4:00:25</td>
+  </tr>
+  <tr class="tablecolor">
+    <td>2017</td>
+    <td>Matthew Gentile (age 45)</td>
+    <td>11:07:05</td>
+    <td>1:09:36</td>
+    <td>5:38:20</td>
+    <td>4:06:31</td>
+  </tr>
+  <tr class="tablecolor">
+    <td>2015</td>
+    <td>David Mullaney (age 49)</td>
+    <td>10:38:13</td>
+    <td>1:09:21</td>
+    <td>5:30:28</td>
+    <td>3:47:32</td>
+  </tr>
+  <tr class="tablecolor">
+    <td>2013</td>
+    <td>Shane Hinds (age 49)</td>
+    <td>10:45:43</td>
+    <td>1:16:39</td>
+    <td>5:39:10</td>
+    <td class="winnercolor">3:42:31</td>
+  </tr>
+  <tr class="tablecolor">
+    <td>2012</td>
+    <td>Adrian Maizey (age 38)</td>
+    <td>11:51:30</td>
+    <td>1:04:08</td>
+    <td>5:49:51</td>
+    <td>4:48:09</td>
+  </tr>
+  <tr class="tablecolor">
+    <td>2010</td>
+    <td>David Mullaney (age 44)</td>
+    <td class="winnercolor">10:31:38</td>
+    <td>1:11:36</td>
+    <td class="winnercolor">5:18:07</td>
+    <td>3:52:35</td>
+  </tr>
+  <tr class="tablecolor">
+    <td>2009</td>
+    <td>Ted Heget (age 36)</td>
+    <td>10:37:41</td>
+    <td>1:13:41</td>
+    <td>5:29:44</td>
+    <td>3:46:06</td>
+  </tr>
+</table>
+</center>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+<h2>Seasonal Graphs</h2>
+	
+<center>
+<div id="myChart1" style="width:100%; max-width:600px; height:500px;"></div>
+
+
+
+<script>
+//this is my fall graph
+
+google.charts.load('current',{packages:['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+function drawChart() {
+// Set Data
+var data = google.visualization.arrayToDataTable([
+  ['Time of Month', 'Peak',{role: 'style'}],
+  ['early-sep',0, 'color: orange'],['mid-sep',20, 'color: orange'],['end-sep',40, 'color: orange'],['early-oct',40, 'color: orange'],['mid-oct',35, 'color: orange'],
+  ['end-oct',25, 'color: orange'],['early-nov',20, 'color: orange'],['mid-nov',10, 'color: orange'],
+  ['end-nov',0, 'color: orange']
+]);
+// Set Options
+var options = {
+  title: 'Fall Foliage (0 is low, 20 is mid, 40 is high)',
+  hAxis: {title: 'Time of Month'},
+  vAxis: {title: 'Peak Scale'},
+  legend: 'none'
+};
+// Draw
+var chart = new google.visualization.LineChart(document.getElementById('myChart1'));
+chart.draw(data, options);
+}
+</script>
+<br>
+
+
+<div id="myChart2" style="width:100%; max-width:600px; height:500px;">
+</div>
+
+<script>
+// this is my winter graph
+
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+    ['Country', 'Mhl', {role:'style'}],
+    ['December',25.2, 'color: orange'],
+    ['January',22, 'color: white'],
+    ['February',31.6, 'color: black'],
+    ['March',30, 'color: #f8e9cc '],
+    
+  ]);
+  
+  var options = {
+    title:'Average Snowfall (inches)',
+    is3D:true
+  };
+  
+  var chart = new google.visualization.PieChart(document.getElementById('myChart2'));
+    chart.draw(data, options);
+}
+</script>
+<br>
+	
+<div id="myChart3" style="width:100%; max-width:600px; height:500px;"></div>
+
+<script>
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+function drawChart() {
+var data = google.visualization.arrayToDataTable([
+  ['Months', 'Gallons', {role: 'style'}],
+  ['March',588000, 'color: orange'],
+  ['April',210000, 'color: orange'],
+  ['May',42000, 'color: orange']
+]);
+
+var options = {
+  title:'Maple Syrup Produced in the Spring'
+};
+
+var chart = new google.visualization.BarChart(document.getElementById('myChart3'));
+  chart.draw(data, options);
+}
+</script>
+<br>
+
+<div id="myChart" style="width:100%; max-width:600px; height:500px;">
+</div>
+
+<script>
+//this is my summer graph
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+    ['Month', 'Temperature'],
+    ['June',73],
+    ['July',77],
+    ['August',75]
+  ]);
+  
+  var options = {
+    title:'Average Temperatures in the Summer',
+    is3D:true
+  };
+  
+  var chart = new google.visualization.PieChart(document.getElementById('myChart'));
+    chart.draw(data, options);
+}
+</script>
+
+<br>
+
+	
+</center>
+	
+</div>
+</body>
+</html>

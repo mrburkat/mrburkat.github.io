@@ -1,0 +1,120 @@
+body {
+			margin: 0;
+			font-family: Garamond, Georgia, Verdana;
+			background-color:#E6D3B5;
+			color: #000000;
+			font-size: 17px;
+		}
+
+		.topnav {
+			overflow: hidden;
+			background-color: #f8f6f0;
+		}
+
+		.topnav a {
+			float: left;
+			color: #000000;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-size: 19px;
+			width: 17%; /* Five links of equal widths */
+		}
+
+		.topnav a:hover {
+			background-color: #26BD69;
+			font-weight: bold;
+			color: black;
+		}
+
+		.topnav a.active {
+		  font-weight: bold;
+			color: black;
+		}
+
+h1, h2 {
+  background-color: #795644;
+  color: #FFFFFF;
+}
+
+h1 {
+  font-size: 250%;
+}
+
+h2 {
+  font-size: 150%;
+}
+
+h3 {
+  font-weight: bold;
+}
+p {
+  color: #1b663e;
+  font-weight: 700;
+}
+.center {
+  text-align: center;
+}
+th {
+  background-color: #1b663e;
+  color: white
+}
+
+li {
+  list-style-type: square;
+}
+
+li {
+  list-style-type: "\1F44D";
+}
+
+li {
+  list-style-image: url(images/backpack.gif);
+  padding-top: 5px;
+  margin-left: 20px;
+}
+.color {
+  background-color: #ccbbaa;
+}
+
+.white {
+  background-color:#FFFFFF;
+}
+
+caption {
+  font-weight:bold;
+}
+
+table {
+
+margin-left: 20px;
+margin-right: 20px;
+border: thin solid black;
+caption-side: bottom;
+border-collapse: collapse;
+border-spacing: 10px 30px;
+
+}
+
+.black {
+  color: black;
+  font-weight: bold;
+  font-style: italic;
+}
+
+form {
+  padding: 10px;
+  border: thin dotted #7e7e7e;
+  background-color: #f8f6f0;
+  margin: 20px;
+}
+
+form textarea {
+  width: 500px;
+  height: 50px;
+}
+.size {
+  font-size: 24px;
+  margin: 20px;
+  padding: 10px;
+}

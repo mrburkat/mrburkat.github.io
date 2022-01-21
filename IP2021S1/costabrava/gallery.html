@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Gallery Page</title>
+	<link type="text/css" rel="stylesheet" href="style.css">
+	<!-- This page will show many pictures of Costa Brava. -->
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+<body>
+  <center>
+  <img src="assets/banner4.jpg">
+  </center>
+	<div class="topnav">
+		<a class="active" href="index.html">Home</a>
+		<a href="list.html">Extra Things</a>
+		<a href="table.html">Money/Food</a>
+		<a href="gallery.html">Gallery</a>
+		<a href="form.html">Contact Us</a>
+	</div>
+	<div style="padding-left:16px">
+		<h2>Location and Video of Costa Brava</h2>
+		<p>Here you can see the location and a video for additional information about Costa Brava!</p>
+	</div>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d278830.1855717536!2d2.847218272720705!3d42.23802194039057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12baf8e36f90d6c5%3A0xbee52c2ae6bcadca!2sCosta%20Brava%2C%20Girona%2C%20Spain!5e0!3m2!1sen!2sus!4v1633098012918!5m2!1sen!2sus" width="700" height="315" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/a_h4ynFAoAY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<a href="assets/costabrava1.jpeg">
+  <img src="assets/costabrava1thumb.jpg">
+</a>
+<p>A view from the top hill of Costa Brava.</p>
+<a href="assets/costabrava2.jpg">
+  <img src="assets/costabrava2thumb.jpg">
+</a>
+<p>This was taken on a bright sunny day in Costa Brava, it offers a great view of the clear waters and lovely coastline.</p>
+<a href="assets/costabrava3.jpeg">
+  <img src="assets/costabrava3thumb.jpg">
+</a>
+<p>This is an image from inside the town, here you can see the unique structure of the houses.</p>
+<a href="assets/costabrava4.jpeg">
+  <img src="assets/costabrava4thumb.jpg">
+</a>
+<p>This was taken from the walk-off area by the ocean. It offers a great view of all the boats and hills.</p>
+<a href="assets/costabrava5.jpeg">
+  <img src="assets/costabrava5thumb.jpg">
+</a>
+<p>This was taken from one of the highest points of Costa Brava, here you can clearly see the whole town.</p>
+<div id="myChart" style="width:100%; max-width:600px; height:500px;"></div>
+<script>
+google.charts.load('current',{packages:['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+function drawChart() {
+// Set Data
+var data = google.visualization.arrayToDataTable([
+  ['Month', 'Temperature'],
+  ["January",57],['February',57],['March',62],['April',67],['May',72],
+  ['June',80],['July',84],['August',84],
+  ['September',79],['October',72],['November',64]
+]);
+// Set Options
+var options = {
+  title: 'Average Temperature in Costa Brava',
+  hAxis: {title: 'Month'},
+  vAxis: {title: 'Temperature'},
+  legend: 'none'
+};
+// Draw
+var chart = new google.visualization.LineChart(document.getElementById('myChart'));
+chart.draw(data, options);
+}
+</script>
+</body>
+</html>
+
+

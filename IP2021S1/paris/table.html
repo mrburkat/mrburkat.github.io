@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>template</title>
+	<link type="text/css" rel="stylesheet" href="style.css">
+</head>
+<body> <!-- Where to stay - hotel, location, cost, value -->
+<img src="assets/banner 2.jpg">
+<header style="position: relative; top: -10px;">
+	<div class="topnav">
+    <a href="index.html">Home</a>
+		<a href="gallery.html">Photo Gallery</a>
+		<a href="list.html">Bucket List</a>
+		<a class="active" href="form.html">Where to Stay</a>
+		<a href="form.html">Book your Stay</a>
+	</div>
+
+	<div style="padding-left:16px">
+		<h2>Where to Stay</h2>
+	</div>
+	<div id="myChart" style="width:100%; max-width:600px; height:500px;"></div>
+
+<script>
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+function drawChart() {
+var data = google.visualization.arrayToDataTable([
+  ['Hotel', 'Nightly Price',{role:'style'}],
+  ['La Villa Haussmann', 227,'color:#000080'],
+  ['Hyatt Regency Paris Étoile', 178,'color:#000080'],
+  ['10 Opéra',105,'color:#000080'],
+  ['Pax Opera',86,'color:#000080'],
+  ['CIS Paris Ravel',85,'color:#000080'],
+  ['Eden Opéra',74,'color:#000080']
+]);
+
+var options = {
+  title:'Hotel Prices',
+  hAxis: {format: 'currency'},
+  backgroundColor: '#ffd8d6'
+};
+
+var chart = new google.visualization.BarChart(document.getElementById('myChart'));
+  chart.draw(data, options);
+}
+</script>
+<p>Top rated hotels in Paris France ranging from more extravagent hotels to the more reasonably priced.</p>
+<table>
+  <tr>
+    <th>Hotel</th>
+    <th>Price</th>
+    <th>Stars</th>
+  </tr>
+  <tr>
+    <td>La Villa Haussmann</td>
+    <td>227</td>
+    <td>4/5</td>
+  </tr>
+  <tr class="cellcolor">
+    <td>Hyatt Regency Paris Étoile</td>
+    <td>178</td>
+    <td>4/5</td>
+  </tr>
+  <tr>
+    <td>10 Opéra</td>
+    <td>105</td>
+    <td>5/5</td>
+  </tr>
+  <tr class="cellcolor">
+    <td>Pax Opera</td>
+    <td>86</td>
+    <td>4/5</td>
+  </tr>
+  <tr>
+    <td>CIS Paris Ravel</td>
+    <td>85</td>
+    <td>3.5/5</td>
+  </tr>
+  <tr class="cellcolor">
+    <td>Eden Opéra</td>
+    <td>74</td>
+    <td>4/5</td>
+  </tr>
+  <caption>
+    The price and star rating of hotels
+  </caption>
+</table>
+</header>
+</body>
+</html>

@@ -1,0 +1,98 @@
+
+body {
+  margin: 0;
+  font-family: Playfair Display;
+  background-color:#ffd8d6;
+  color: #000080;
+  font-size: 17px;
+}
+
+.topnav {
+  overflow: hidden;
+	background-color: #feb7c6;
+}
+
+.topnav a {
+  float: left;
+	color: #000080;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+	width: 17%; /* Five links of equal widths */
+}
+
+.topnav a:hover {
+	background-color: #E75480;
+	color: #000080;
+}
+
+.topnav .active {
+	background-color: #E75480;
+	color: #000080;
+}
+h2 {
+	font-size: 200%;
+}
+		
+table {
+  margin-left: 20px;
+  margin-right: 20px;
+  border: thin solid black;
+  caption-side: bottom;
+  border-collapse: collapse;
+}
+		
+td, th {
+  border: thin solid gray;
+  padding: 5px;
+}
+caption {
+  font-style: italic;
+  padding-top: 8px;
+}
+.center {
+  text-align :center;
+}
+.right {
+  text-align :right;
+}
+th {
+  background-color: #CE5C93;
+}
+.cellcolor {
+  background-color: #feb7c6;
+}
+li{
+  list-style-image: url(images/backpack.gif);
+  padding-top: 5px;
+  margin-left :20px;
+}
+p {
+  margin:20px;
+}
+form {
+  display:table;
+  padding:10px;
+  border:thin dotted;
+  margin:20px;
+}
+form textarea{
+  width:195px;
+  height:50px;
+}
+div.tablerow{
+  display:table-row;
+}
+div.tablerow p{
+  display: table-cell;
+  vertical-align: top;
+  padding: 3px;
+}
+div.tablerow p:first-child{
+  text-align:right;
+}
+.heading{
+  font-weight:bold;
+}
+

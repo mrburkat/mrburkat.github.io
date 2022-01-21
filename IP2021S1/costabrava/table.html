@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Table Page</title>
+	<link type="text/css" rel="stylesheet" href="style.css">
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+<!-- This will show a list of things to do, time they are open, and the different prices -->
+<body>
+  <center>
+  <img src="assets/banner4.jpg">
+  </center>
+	<div class="topnav">
+		<a class="active" href="index.html">Home</a>
+		<a href="list.html">Extra Things</a>
+		<a href="table.html">Money/Food</a>
+		<a href="gallery.html">Gallery</a>
+		<a href="form.html">Contact Us</a>
+	</div>
+	<div style="padding-left:16px">
+		<h2>Welcome to Money Information and Restaurants.</h2>
+		<p>Here you can find the average money exchange rates with the US and some fun restaurants to visit while in Coast Brava!</p>
+	</div>
+	<div id="myChart" style="width:100%; max-width:600px; height:500px;"></div>
+	<script>
+google.charts.load('current',{packages:['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+function drawChart() {
+// Set Data
+var data = google.visualization.arrayToDataTable([
+  ['Price', 'Size'],
+  ["January",0.8213],['February',0.8221],['March',0.8268],['April',0.8357],['May',0.8231],
+  ['June',0.8307],['July',0.8456],['August',0.8496],
+  ['September',0.8493],['October',0.8623],['November',0.8700]
+]);
+// Set Options
+var options = {
+  title: 'Monthley Money Exchange Rates',
+  hAxis: {title: 'Month'},
+  vAxis: {title: 'What 1 USD is Worth'},
+  legend: 'none'
+};
+// Draw
+var chart = new google.visualization.LineChart(document.getElementById('myChart'));
+chart.draw(data, options);
+}
+</script>
+
+<p class="center">
+  There are many delicious restaurants found in and around the Costa Brava regions. They each hold a different cuisine with a unique taste. They can be found in beautiful modern-chic builings with amazing decor. They are loved by many and have a fair pricing for each. The name displays the name of the website, the location tells you where you can find the restaurant, the type of food tells you the cuisine of the restaurant and finally the rating show how good the food is.
+</p>
+<table>
+  <caption>
+        These are different reaturants found near and in the Coasta Brava Region.
+  </caption>
+       <tr class="cellcolor1">
+        <th class="center">Restaurant Name</th>
+        <th class="center">Location</th>
+        <th class="center">Type of Food</th>
+        <th class="center">Rating</th>
+      </tr>
+      <tr class="cellcolor">
+        <td class="center">Compartir</td>
+        <td class="center">Cadaques</td>
+        <td class="center">Catalan Cuisine</td>
+        <td class="center">8/10</td>
+      </tr>
+      <tr>
+        <td class="center">Pa i Raïm</td>
+        <td class="center">Palafrugell</td>
+        <td class="center">Emporda Cuisine</td>
+        <td class="center">7/10</td>
+      </tr>
+      <tr class="cellcolor">
+        <td class="center">Vicus</td>
+        <td class="center">Empordà</td>
+        <td class="center">Catalan Cuisine</td>
+        <td class="center">7/10</td>
+      </tr>
+      <tr>
+        <td class="center">El Celler de Can Roca</td>
+        <td class="center">Coasta Brava</td>
+        <td class="center">Catalan Cuisine</td>
+        <td class="center">10/10</td>
+      </tr>
+      <tr class="cellcolor">
+        <td class="center">Hostal Sa Rascassa</td>
+        <td class="center">Coasta Brava</td>
+        <td class="center">Catalan Cuisine</td>
+        <td class="center">8/10</td>
+      </tr>
+      <tr>
+        <td class="center">Els Brancs</td>
+        <td class="center">Bonifaci Beach</td>
+        <td class="center">Catalan Cuisine</td>
+        <td class="center">9/10</td>
+      </tr>
+      <tr class="cellcolor">
+        <td class="center">El Trull d'en Francesc</td>
+        <td class="center">Boadella i les Escaules</td>
+        <td class="center">Seafood</td>
+        <td class="center">8/10</td>
+      </tr>
+      <tr>
+        <td class="center">Les Magnolies</td>
+        <td class="center">Plaisance-sur-Rance</td>
+        <td class="center">Mediterranean Cuisine</td>
+        <td class="center">8/10</td>
+      </tr>
+      <tr class="cellcolor">
+        <td class="center">Casa Anita</td>
+        <td class="center">Cadaques</td>
+        <td class="center">Seasonal Cuisine</td>
+        <td class="center">7/10</td>
+      </tr>
+      <tr>
+        <td class="center">Restaurant Massana</td>
+        <td class="center">Girona</td>
+        <td class="center">Traditional Cuisine</td>
+        <td class="center">9/10</td>
+      </tr>
+</table>
+
+
+</body>
+</html>
+
+

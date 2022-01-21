@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Activities</title>
+		<link type="text/css" rel="stylesheet" href="style.css">
+		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+<!-- This table.html page will be broken into 5 different activities to do- Cultural; athletic; culinary; and nature-->
+<body>
+ <center><img src="assets/Banner 3.jpg" height="150" width="1375"></center>
+	<div class="topnav">
+	  <a class="active" href="index.html">Home</a>
+		<a href="gallery.html">Gallery</a>
+		<a href="list.html">Kyoto at a Glance...</a>
+		<a href="table.html">Activities</a>
+		<a href="form.html">Book an Experience</a>
+	</div>
+
+	<div style="padding-left:16px">
+		<h1>Activites</h1>
+		<p>Below are the many fun and interesting activities to do in Kyoto. Kyoto has something for everyone. There are experiences that correspond to every preference you can think of. Also, under the table of activites, is a weather chart that you should be concious of when planning your day. </p>
+	</div>
+	  <center>
+     <table>
+       <caption>
+        Oh the things you can do in Kyoto!
+     </caption>
+      <tr class="color">
+        <th>Cultural</th>
+        <th>Athletic</th>
+        <th>Culinary</th>
+        <th>Nature</th>
+      </tr>
+      <tr class="white">
+        <td class="center">Watch the Geisha Spring Dances</td>
+        <td class="center">Hike from Kibune to Kurama</td>
+        <td class="center">Drink Matcha in a Teahouse</td>
+        <td class="center">Seet out Cherry Blossoms or Autumn Leaves</td>
+    
+      </tr>
+      <tr class="color">
+        <td class="center">See the Golden Pavilion at Kinkaku-ji Temple</td>
+        <td class="center">Explore Nanzen-ji Temple</td>
+        <td class="center">Eat Shojin Ryori in a Temple</td>
+        <td class="center">Stroll The Philosopher's Path</td>
+        
+      </tr>
+      <tr class="white">
+        <td class="center">Spend a Day in Arashiyama</td>
+        <td class="center">Cycle Algon the Kamo River</td>
+        <td class="center">Take a Japanese Cooking Class</td>
+        <td class="center">Wander Around Kyoto Botanical Gardens</td>
+        
+      </tr>
+      <tr class="color">
+        <td class="center">Geek Out at Kyoto International Manga Museum</td>
+        <td class="center">Yoshida Hill Temples and Shrines</td>
+        <td class="center">Shop at Nishiki Market</td>
+        <td class="center">Enjoy the View from Kiyomizu Temple</td>
+        
+      </tr>
+    </table>
+    </center>
+    <br>
+
+	<center><div id="myChart" style="width:100%; max-width:600px; height:500px;" ></div></center>
+  	<script>
+  google.charts.load('current',{packages:['corechart']});
+  google.charts.setOnLoadCallback(drawChart);
+  
+  function drawChart() {
+  // Set Data
+  var data = google.visualization.arrayToDataTable([
+    ['Month', 'Temperature'],
+    ['Jan',48],['Feb',50],['Mar',56],['Apr',68],['May',77],
+    ['Jun',82],['Jul',89],['Aug',92],
+    ['Sep',84],['Oct',73],['Nov',63],['Dec',53]
+    
+  ]);
+  
+  // Set Options
+  var options = {
+    title: 'Average High Temperatures in Kyoto',
+    hAxis: {title: 'Months'},
+    vAxis: {title: 'Temperature (°F)'},
+    legend: 'none'
+  };
+  // Draw
+  var chart = new google.visualization.LineChart(document.getElementById('myChart'));
+  chart.draw(data, options);
+  }
+  </script>
+
+
+</body>
+</html>
+
+

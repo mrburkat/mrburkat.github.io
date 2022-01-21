@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>template</title>
+	<link type="text/css" rel="stylesheet" href="style.css">
+</head>
+<body> <!-- Book your stay - name, email, hotel, dates, cc info -->
+<img src="assets/banner 2.jpg">
+<header style="position: relative; top: -10px;">
+	<div class="topnav">
+	  <a href="index.html">Home</a>
+		<a href="gallery.html">Photo Gallery</a>
+		<a href="list.html">Bucket List</a>
+		<a href="table.html">Where to Stay</a>
+		<a class="active" href="form.html">Book your Stay</a>
+	</div>
+
+	<div style="padding-left:16px">
+		<h2>Book your Stay!</h2>
+		<form action="thankyou.html" method="GET">
+		  <div class="tablerow">
+      <p>Name:</p>
+        <p><input type="text"></p>
+        </div>
+        
+      <div class="tablerow">
+      <p>Email:</p>
+        <p><input type="email"></p>
+        </div>
+        
+      <div class="tablerow">
+      <p>Hotel:</p>
+        <p><select name="hotel">
+          <option value="Select">Select...</option>
+          <option value="Villa">La Villa Haussmann</option>
+          <option value="Hyatt">Hyatt Regency Paris Étoile</option>
+          <option value="10">10 Opera</option>
+          <option value="Pax">Pax Opera</option>
+          <option value="Ravel">CIS Paris Ravel</option>
+          <option value="Eden">Eden Opera</option>
+        </select>
+      </p>
+      </div>
+      
+      <div class="tablerow">
+      <p>Date:</p>
+        <p><input type="date" name="date"></p>
+        </div>
+        
+        <div class="tablerow">
+        <p>CC Info</p>
+        </div>
+        
+        <div class="tablerow">
+        <p>Card Holder Name:</p>
+        <p><input type="text"></p>
+        </div>
+        
+        <div class="tablerow">
+        <p>Number:</p>
+        <p><input type="text"></p>
+        </div>
+        
+        <div class="tablerow">
+        <p>CVC:</p>
+        <p><input type="text>"></p>
+        </div>
+        
+        <div class="tablerow">
+        <p>Expiration Date:</p>
+        <p><input type="text"></p>
+        </div>
+        
+        <div class="tablerow">
+      <p>Comments:</p>
+        <p><textarea name="comments"></textarea></p>
+      </div>
+      
+      <div class="tablerow">
+      <p>
+        <input type="submit" value="Book your stay">
+      </p>
+      </div>
+    </form>
+	</div>
+	</header>
+</body>
+</html>

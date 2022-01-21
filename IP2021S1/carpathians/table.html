@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Table</title>
+	<link type="text/css" rel="stylesheet" href="style.css">
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Country', 'Countries that hold the Carpathians'],
+          ['Romania',     50],
+          ['Slovakia',      17],
+          ['Poland',  10],
+          ['Ukraine', 10],
+          ['Serbia',    5],
+          ['Hungary',     4],
+          ['Czechia',     3]
+        ]);
+        var options = {
+          title: 'Countries of Carpathian Mountains by percentage',
+          pieHole: 0.4,
+          backgroundColor: '#9fc5e8',
+        };
+        var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+        chart.draw(data, options);
+      }
+    </script>
+</head>
+<body>
+  <div class="bluebar">
+  <center>
+    <img src="Assets/Banner3.png">
+  </center>
+  </div>
+	<div class="topnav">
+		<a href="index.html">Home</a>
+		<a href="gallery.html">Gallery</a>
+		<a href="list.html">List</a>
+		<a class="active" href="table.html">Information</a>
+		<a href="form.html">Contact</a>
+	</div>
+	<div style="padding-left:16px">
+		<h1>Information</h1>
+		<p style="padding-bottom: 80px;">Here you will find geographical information on the Carpathian mountains, most of te information presented will be organized by the countries the range resides in as of 2021.</p>
+	</div>
+	<table class="tablecenter" style="color: white;">
+  	  <caption class="bottompadding">
+  	    Highest peaks by country
+  	  </caption>
+      <tr class="blueopaccolor">
+        <th>Country</th>
+        <th>Height (m)</th>
+        <th>Name of Peak</th>
+      </tr>
+      <tr class="whiteopaccolor">
+        <td>Slovakia</td>
+        <td>2,655</td>
+        <td>Gerlachovský štít</td>
+      </tr>
+      <tr class="blueopaccolor">
+        <td>Romania</td>
+        <td>2,544</td>
+        <td>Moldoveanu</td>
+      </tr>
+      <tr class="whiteopaccolor">
+        <td>Poland</td>
+        <td>2,503</td>
+        <td>Rysy</td>
+      </tr>
+      <tr class="blueopaccolor">
+        <td>Ukraine</td>
+        <td>2,061</td>
+        <td>Hoverla</td>
+      </tr>
+      <tr class="whiteopaccolor">
+        <td>Serbia</td>
+        <td>1,565</td>
+        <td>Rtanj</td>
+      </tr>
+      <tr class="blueopaccolor">
+        <td>Czech Republic</td>
+        <td>1,323</td>
+        <td>Lysá hora</td>
+      </tr>
+      <tr class="whiteopaccolor">
+        <td>Hungary</td>
+        <td>1,014</td>
+        <td>Kékes</td>
+      </tr>
+    </table>
+  <div id="donutchart" class="donutchart"></div>
+</body>
+</html>
+
+

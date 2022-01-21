@@ -1,0 +1,124 @@
+/*normal text*/
+h1, p, h3, h2, a{
+  color: white;
+  text-decoration: none;
+}
+
+body {
+			margin: 0;
+			font-family: Arial, Helvetica, sans-serif;
+			background-image: url("assets/CarpathianMountains10.jpg");
+			color: #000000;
+			
+		}
+
+		.topnav {
+			overflow: hidden;
+			background-color: #b4cce0;
+			margin-top:0;
+		}
+
+		.topnav a {
+			float: left;
+			color: #0b5394;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-size: 17px;
+			width: 17%; /* Five links of equal widths */
+			transition: 1s;
+		}
+
+		.topnav a:hover {
+			background-color: #9fc5e8;
+			color: #0b5394;
+		}
+
+		.topnav a.active {
+			background-color: #0b5394;
+			color: #9fc5e8;
+		}
+
+.tablecenter {
+  margin-left: auto;
+  margin-right: auto;
+}
+.donutchart {
+  width: 500px;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 70%;
+}
+.bottompadding {
+  padding-bottom: 50px;
+}
+/* for the table on the table page*/
+table {
+  caption-side: bottom;
+}
+.blueopaccolor {
+  background-color: rgba(54, 71, 114, 0.5)
+}
+.whiteopaccolor {
+  background-color: rgba(168, 179, 197, 0.5);
+}
+img {
+  margin-bottom: 0;
+}
+/*for the blue bar on the top of the screen*/
+.bluebar {
+  width: 100%;
+  background-color: #539bdb;
+}
+/* Fadein animation for thank you page*/
+.fade-in {
+  animation: fadeIn ease 10s;
+  -webkit-animation: fadeIn ease 10s;
+  -moz-animation: fadeIn ease 10s;
+  -o-animation: fadeIn ease 10s;
+  -ms-animation: fadeIn ease 10s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+/* just in case you're not using chrome on a computer */
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+}

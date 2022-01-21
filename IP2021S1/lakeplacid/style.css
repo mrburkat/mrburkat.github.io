@@ -1,0 +1,45 @@
+ @font-face {
+  
+  font-family: "hand";
+  src: url("assets/uglyhandwriting.ttf");
+  
+}
+ 
+ 
+ body {
+			margin: 0;
+			font-family: Arial, Helvetica, sans-serif, hand;
+			font-size: small;
+			background-color:#f8e9cc;
+			color: #000000;
+		}
+		
+h1 {
+  font-family:hand;
+  font-size: 225%;
+}
+
+		.topnav {
+			overflow: hidden;
+			background-color: #7E5215;
+		}
+
+		.topnav a {
+			float: left;
+			color: #f8e9cc;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-size: 17px;
+			width: 17%; /* Five links of equal widths */
+		}
+
+		.topnav a:hover {
+			background-color: #f8e9cc;
+			color: #7E5215;
+		}
+
+		.topnav .active {
+			background-color: #4CAF50;
+			color: white;
+		}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contact</title>
+  <link type="text/css" rel="stylesheet" href="style.css">
+  <style>
+      ::placeholder {
+        color: rgb(11, 83, 148);
+      }
+    	input[type=text], input[type=email], input[type=tel], textarea, select, input[type=submit], input[type=button] {
+            font: 17px Calibri;
+            color: rgb(11, 83, 148);
+            width: 45%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color:rgba(255,255,255,0.5);
+            margin: 10px;
+            overflow: hidden;
+            display: inline-block;
+            height: 50px;
+        }
+        input[type=submit]{
+            cursor: pointer;
+            width: 45%;
+            transition: 500ms;
+        }
+        input[type=submit]:hover {
+          background-color: rgb(11, 83, 148, 0.5);
+		    	color: rgb(159, 197, 232);
+        }
+  </style>
+</head>
+<body>
+  <div class="bluebar">
+  <center>
+    <img src="Assets/Banner3.png">
+  </center>
+  </div>
+	<div class="topnav">
+		<a href="index.html">Home</a>
+		<a href="gallery.html">Gallery</a>
+		<a href="list.html">List</a>
+		<a href="table.html">Information</a>
+		<a class="active" href="form.html">Contact</a>
+	</div>
+
+	<div style="margin-left:16px">
+		<h1>Contact</h1>
+		</div>
+	<form action="thankyou.html" method = "post">
+        <input type="text" id="msg" name="msg" placeholder="What's your message?"/>
+          <input type="text" id="txtName" placeholder="Enter your name" />
+          <input type="email" id="txtEmail" placeholder="Enter your email (optional)" />
+          <input type="text" id="sub" placeholder="Enter the subject of your message" />
+          <input type="tel" id="tel" placeholder="Enter your phone number" />
+          <input type="submit" id="bt" placeholder="Submit" />
+      </form>
+</body>
+</html>
+
+
