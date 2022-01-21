@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home</title>
+	<link type="text/css" rel="stylesheet" href="style.css">
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+<body>
+  <img src="Assets/banner3longer.jpg"
+  width="1200" height="300">
+	<div class="topnav">
+		<a class="active" href="index.html">Home</a>
+		<a href="list.html">Activities</a>
+		<a href="gallery.html">Playa Samara Photos</a>
+		<a href="table.html">Weather</a>
+		<a href="form.html">Buy a T-Shirt!</a>
+	</div>
+
+	<div style="padding-left:16px">
+		<h2>Home</h2>
+		<p>Some content..</p>
+	</div>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3316.4469107404066!2d-85.5157558857297!3d9.883563292931033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f9faa01e2091a3d%3A0x341f2d530bcc25b5!2sSamara%20Beach!5e1!3m2!1sen!2sus!4v1633091990463!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+<script>
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+    ['Religion', 'Mhl'],
+    ['Roman Cahtolic',47],
+    ['Irreligion',27],
+    ['Evangelical',19],
+    ['Protestant',1.2],
+    ['Mormon',.3],
+    ['Jehovas Witness',.2],
+    ['Islam',.1],
+    ['Other',2.7],
+    ['No answer',2.5]
+  ]);
+  
+  var options = {
+    title:'Religious Population of Costa Rica',
+    is3D:true
+  };
+  
+  var chart = new google.visualization.PieChart(document.getElementById('myChart'));
+    chart.draw(data, options);
+}
+</script>
+<div id="myChart" style="width:100%; max-width:600px; height:500px;">
+</div>
+</body>
+</html>
+<!-- General info about Samara beach and some pictures-->
+
+

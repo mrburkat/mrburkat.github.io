@@ -1,0 +1,55 @@
+<!-- this page will have a overall view of what the website is about including the counry motto -->
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home &#127796;</title>
+	
+	    <link type="text/css" rel="stylesheet" href="style.css">
+	    
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+</head>
+<body>
+  
+    <img src="assets/banner1.jpg">
+
+	<div class="vertical-menu">
+		<a href="#" class="active">Home</a>
+		<a href="list.html">Attractions</a>
+		<a href="table.html">Things to Know</a>
+		<a href="form.html">Tell Us!</a>
+		<a href="gallery.html">Gallery</a>
+	</div>
+	
+	<h1> WELCOME! We're exitied you're here. </h1>
+	
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d970740.7024589406!2d-77.83659794436899!3d18.119829055875062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eda2a1bc6cf719d%3A0x59a0d1c0b5120efa!2sJamaica!5e0!3m2!1sen!2sus!4v1633092080101!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+	
+	<script>
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+function drawChart() {
+var data = google.visualization.arrayToDataTable([
+  ['Hotel', 'USD'],
+  ['Hotel Riu Palace Tropical Bay',392],
+  ['Hotel Riu Montego Bay',257],
+  ['Hotel Riu Ochos Rios',208],
+  ['Hotel Riu Palace Jamaica',312],
+  ['Hotel Riu Negril',190],
+  ['Hotel Riu Reggae',269]
+]);
+
+var options = {
+  title:'Top Rated Hotels Per Night'
+};
+
+var chart = new google.visualization.BarChart(document.getElementById('myChart'));
+  chart.draw(data, options);
+}
+</script>
+	
+	<div id="myChart" style="width:100%; max-width:600px; height:500px;"></div>
+	
+</body>
+</html>

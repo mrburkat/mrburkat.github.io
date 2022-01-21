@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Puerto Rico Climate</title>
+	<link type="text/css" rel="stylesheet" href="style.css">
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+<body>
+  <img src="Assets/Banner3(3).jpg">
+  <!-- List the Population, Weather, and/or Tourism density -->
+	<div class="topnav">
+		<a href="index.html">Home</a>
+		<a href="list.html">History</a>
+		<a href="gallery.html">Gallery</a>
+		<a class="active" href="table.html">Climate</a>
+		<a href="form.html">For more information...</a>
+	</div>
+  <h1>Puerto Rico's Climate</h1>
+	<div style="padding-left:16px">
+	</div>
+	<div id="myChart" style="width:100%; max-width:600px; height:500px; color:green;"></div>
+<script>
+google.charts.load('current',{packages:['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+function drawChart() {
+// Set Data
+var data = google.visualization.arrayToDataTable([
+  ['Low Temp', 'Low Temp', 'High Temp'],['Jan',70,83],['Feb',70,84],['Mar',71,85],['Apr',73,86],['May',74,87],['Jun',76,89],['Jul',76,88],['Aug',76,89],['Sep',76,89],['Oct',75,88],['Nov',74,86],['Dec',72,84]
+]);
+// Set Options
+var options = {
+  title: 'Highest and Lowest Temperatures',
+  hAxis: {title: 'Precipitation and Temperature'},
+  vAxis: {title: 'Month'},
+  legend: 'Precipitation'
+};
+// Draw
+var chart = new google.visualization.LineChart(document.getElementById('myChart'));
+chart.draw(data, options);
+}
+</script>
+
+<p>If you are planning a trip to Puerto Rico, it is important to look at the climate for each month. Picking a month with optimal temperature and precipitation can help you to fully enjoy this beautiful island.</p>
+<table>
+  <caption>Puerto Rico's Climate</caption>
+  <tr>
+  <th>Month</th>
+  <th>Avg High</th>
+  <th>Avg Low</th>
+  <th>Warmest Ever</th>
+  <th>Coldest Ever</th>
+  <th>Avg Dew Point</th>
+  <th>Avg Precipitation</th>
+</tr>
+<tr>
+  <td class="center">January</td>
+  <td class="center">83</td>
+  <td class="center">70</td>
+  <td class="center">92</td>
+  <td class="center">61</td>
+  <td class="center">67</td>
+  <td class="center">3.0</td>
+</tr>
+<tr class="cellcolor">
+  <td class="center">February</td>
+  <td class="center">84</td>
+  <td class="center">70</td>
+  <td class="center">96</td>
+  <td class="center">62</td>
+  <td class="center">67</td>
+  <td class="center">2.2</td>
+</tr>
+<tr>
+  <td class="center">March</td>
+  <td class="center">85</td>
+  <td class="center">71</td>
+  <td class="center">96</td>
+  <td class="center">60</td>
+  <td class="center">67</td>
+  <td class="center">2.3</td>
+</tr>
+<tr class="cellcolor">
+  <td class="center">April</td>
+  <td class="center">86</td>
+  <td class="center">73</td>
+  <td class="center">97</td>
+  <td class="center">64</td>
+  <td class="center">69</td>
+  <td class="center">3.7</td>
+</tr>
+<tr>
+  <td class="center">May</td>
+  <td class="center">87</td>
+  <td class="center">74</td>
+  <td class="center">96</td>
+  <td class="center">66</td>
+  <td class="center">71</td>
+  <td class="center">6.1</td>
+</tr>
+<tr class="cellcolor">
+  <td class="center">June</td>
+  <td class="center">89</td>
+  <td class="center">76</td>
+  <td class="center">97</td>
+  <td class="center">69</td>
+  <td class="center">73</td>
+  <td class="center">4.4</td>
+</tr>
+<tr>
+  <td class="center">July</td>
+  <td class="center">88</td>
+  <td class="center">76</td>
+  <td class="center">95</td>
+  <td class="center">69</td>
+  <td class="center">73</td>
+  <td class="center">4.5</td>
+</tr>
+<tr class="cellcolor">
+  <td class="center">August</td>
+  <td class="center">89</td>
+  <td class="center">76</td>
+  <td class="center">97</td>
+  <td class="center">70</td>
+  <td class="center">74</td>
+  <td class="center">5.3</td>
+</tr>
+<tr>
+  <td class="center">September</td>
+  <td class="center">89</td>
+  <td class="center">76</td>
+  <td class="center">97</td>
+  <td class="center">69</td>
+  <td class="center">73</td>
+  <td class="center">5.3</td>
+</tr>
+<tr class="cellcolor">
+  <td class="center">October</td>
+  <td class="center">88</td>
+  <td class="center">75</td>
+  <td class="center">98</td>
+  <td class="center">67</td>
+  <td class="center">73</td>
+  <td class="center">5.5</td>
+</tr>
+<tr>
+  <td class="center">November</td>
+  <td class="center">86</td>
+  <td class="center">74</td>
+  <td class="center">96</td>
+  <td class="center">66</td>
+  <td class="center">71</td>
+  <td class="center">5.8</td>
+</tr>
+<tr class="cellcolor">
+  <td class="center">December</td>
+  <td class="center">84</td>
+  <td class="center">72</td>
+  <td class="center">94</td>
+  <td class="center">63</td>
+  <td class="center">69</td>
+  <td class="center">4.7</td>
+</tr>
+</table>
+
+</body>
+</html>
+
+

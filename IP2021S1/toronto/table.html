@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Information</title>
+		<link type= "text/css" rel="stylesheet" href="style.css">
+</head>
+<body>
+	
+	<p><img src="Assets/banner2.jpg" class="center"></p>
+	
+	
+	<div class="topnav">
+		<a href="index.html">Home</a>
+		<a href="list.html">Attractions</a>
+		<a href="gallery.html">Explore</a>
+		<a class="active" href="table.html">Information</a>
+		<a href="form.html">Contact Us</a>
+	</div>
+
+	<div style="padding-left:16px">
+		<h2><center>Weather By Month</center></h2>
+		<p>In this table you will see the waether in Toronto per month. The information that is found in this table is: Average Temperature, Temperature Max, Temperature Min, and Percipitation Percent. This should hopefully help you plan which month best fits your travel to Toronto. </p>
+	</div>
+
+<table class="center">
+  
+      
+      <caption>
+
+Monthly Weather for Toronto
+
+</caption>
+      <tr>
+        <th>Month</th>
+        <th>Average Temperature</th>
+        <th>Temperature Max</th>
+        <th>Temperature Min</th>
+        <th>Percipitation Percent</th>
+      </tr>
+      <tr>
+        <td class="bold">January</td>
+        <td>24.1 °F</td>
+        <td>30.4 °F</td>
+        <td>19 °F</td>
+        <td>64%</td>
+      </tr>
+      <tr class="cellcolor">
+        <td class="bold">Febuary</td>
+        <td>24.1 °F</td>
+        <td>31.4 °F</td>
+        <td>18.1 °F</td>
+        <td>54%</td>
+      </tr>
+      <tr>
+      <td class="bold">March</td>
+      <td>31.4 °F</td>
+      <td>39.1 °F</td>
+      <td>25.4 °F</td>
+      <td>59%</td>
+      </tr>
+      <tr class="cellcolor">
+      <td class="bold">April</td>
+      <td>42.5 °F</td>
+      <td>50.2 °F</td>
+      <td>36.2 °F</td>
+      <td>80%</td>
+      </tr>
+      <tr>
+        <td class="bold">May</td>
+        <td>54.1 °F</td>
+        <td>61.8 °F</td>
+        <td>47.4 °F</td>
+        <td>76%</td>
+      </tr>
+      <tr class="cellcolor">
+        <td class="bold">June</td>
+        <td>64.7 °F</td>
+        <td>71.6 °F</td>
+        <td>58.3 °F</td>
+        <td>81%</td>
+      </tr>
+      <tr>
+        <td class="bold">July</td>
+        <td>71.3 °F</td>
+        <td>78.1 °F</td>
+        <td>64.9 °F</td>
+        <td>74%</td>
+      </tr>
+      <tr class="cellcolor">
+        <td class="bold">August</td>
+        <td>70.7 °F</td>
+        <td>77.1 °F</td>
+        <td>64.7 °F</td>
+        <td>69%</td>
+      </tr>
+      <tr>
+        <td class="bold">September</td>
+        <td>64.7 °F</td>
+        <td>70.9 °F</td>
+        <td>59.2 °F</td>
+        <td>73%</td>
+      </tr>
+      <tr class="cellcolor">
+        <td class="bold">October</td>
+        <td>52.4 °F</td>
+        <td>58 °F</td>
+        <td>47.8 °F</td>
+        <td>78%</td>
+      </tr>
+      <tr>
+        <td class="bold">November</td>
+        <td>41 °F</td>
+        <td>46.2 °F</td>
+        <td>36.7 °F</td>
+        <td>69%</td>
+      </tr>
+      <tr class="cellcolor">
+        <td class="bold">December</td>
+        <td>31 °F</td>
+        <td>35.9 °F</td>
+        <td>26.8 °F</td>
+        <td>68%</td>
+      </tr>
+      
+
+</table>
+<br>
+<br>
+
+<h2>
+ <center> Toronto Traffic in 2021 </center>
+</h2>
+<p> This chart below shows you the increase of traffic in 2021. There would be an increase of traffic in Toronto because covid limitations are changing and less strict. </p>
+
+<div id="myChart" style="width:100%; max-width:600px; height:500px;" class="center">
+	  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<div id="myChart" style="width:100%; max-width:600px; height:500px;"></div>
+<script>
+google.charts.load('current',{packages:['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+function drawChart() {
+// Set Data
+var data = google.visualization.arrayToDataTable([
+  ['Week', 'Percent'],
+  [1,10],[4,13],[8,20],[12,20],[16,15],
+  [20,20],[24,23],[28,25],
+  [32,26],[36,25],[40,30]
+]);
+// Set Options
+var options = {
+  title: 'Toronto Traffic',
+  hAxis: {title: 'Week 2021'},
+  vAxis: {title: 'Traffic Congestion'},
+  legend: 'none'
+};
+// Draw
+var chart = new google.visualization.LineChart(document.getElementById('myChart'));
+chart.draw(data, options);
+}
+</script>
+	</div>
+</body>
+</html>

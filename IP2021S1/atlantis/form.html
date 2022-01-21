@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title> Form Page</title>
+		<link type="text/css" rel="stylesheet" href="style.css">
+		
+	</head>
+	<body> <!-- the form tab will have a sheet that people can put their name, address, phone number, and email in to get notofications about news/ information. Almost like a non paying subscription to get details on the resort -->
+	<center>
+	  <img src= "assets/banner 3.jpg">
+	  </center>
+		<p><!-- Create a Menu -->
+			<a href="index.html">Home</a> |
+			<a href="list.html">About</a> |
+			<a href="gallery.html">Pictures</a> |
+			<a href="table.html">Hotels</a> |
+			<a href="form.html">Reservations</a>
+		</p>
+		<h1> Make A Reservation</h1>
+    
+ 
+    <form action= "thankyou.html">
+      <div class="tablerow"></div>
+       <p>
+        Hotel:
+        <select name="beans">
+          <option value="clear"></option>
+          <option value="The reef"> The Reef</option>
+          <option value="The cove">The Cove</option>
+          <option value="Harboside Villas">Harborside Villas</option>
+          <option value="The royal">The Royal</option>
+        </select>
+      </p>
+      
+      
+      <p>
+        Number of Rooms: <input type="number" name="bags" min="1" max="10">
+      </p>
+      <p>
+        Check In - Check Out Dates: <input type="date" name"date"> <input type="date" name"date">
+      </p>
+      
+
+      
+      <p>
+          Name: <input type="text" name="name"> <br>
+          Address: <input type="text" name="address"> <br>
+          City: <input type="text" name="city"> <br>
+          State: <input type="text" name="state"> <br>
+          Zip: <input type="text" name="zip"> <br>
+          Phone: <input type="text" name="phone"> <br>
+      </p>
+      
+      <p> Questions or Concerns: <br>
+            <textarea name="comments"></textarea>
+      </p>
+      
+      <p>
+          <input type="submit" value="Book Now">
+      </p>
+    
+    </form>
+  
+    
+		
+		
+	 
+	</body>
+</html>

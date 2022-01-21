@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Forms</title>
+	<!--Title of the webpage-->
+	<link type="text/css" rel="stylesheet" href="Website.css">
+</head>
+<body>
+  <img src="Assets/Forms Banner.jpg">
+	<div class="topnav">
+	  <a href="Index.html">Home</a> <!--Unactive Tab-->
+	  <a href="List.html">Places to Visit</a> <!--Unactive Tab-->
+	  <a href="Gallery.html">Photos</a> <!--Unactive Tab-->
+	  <a href="Table.html">Population</a> <!--Unactive Tab-->
+		<a class="active" href="Forms.html">Contant Us</a> <!--Active Tab-->
+	</div>
+
+	<div style="padding-left:16px">
+		<h2>Contact Us Today</h2>
+	</div>
+  <form action="ThankYou.html">
+      <p>Contact Information: <br>
+    Name: <input type="text" name="name"><br>
+    Phone: <input type="tel" name="phone"><br>
+    Email: <input type="email" name="email"><br>
+  </p>
+  <p>
+    Date you will be joining us: <input type="date" name="date"><br>
+    Date you are staying until: <input type="date" name="date">
+  </p>
+  <p>Costomer Comments: <br>
+    <textarea name="comments"></textarea>
+  </p>
+  <p>How was your experience with us? <br>
+    <input type="radio" name="star" valye="5star">5 Stars<br>
+    <input type="radio" name="star" value="4star">4 Stars<br>
+    <input type="radio" name="star" value="3star">3 Stars<br>
+    <input type="radio" name="star" value="2star">2 Stars<br>
+    <input type="radio" name="star" value="1star">1 Stars<br>
+  </p>
+  <p>
+    <input type="submit" value="Finish Experience">
+  </p>
+  </form>
+</body>
+</html>
+

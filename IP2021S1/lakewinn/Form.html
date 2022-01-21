@@ -1,0 +1,77 @@
+<!--This Form.html page will display INFO about where to contact me and a Form about activities to do at Lake Winnipesaukee-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contact Us</title>
+	 <link type="text/css" rel="stylesheet" href="style.css">
+</head>
+<body>
+<img src="Assets/Example3.png" height=200, Width=1377, length=200>
+<!-- Create a Menu -->
+	<div class="topnav">
+		<a href="index.html">Home</a>
+		<a href="Gallery.html">Gallery</a>
+		<a href="Table.html">Cool Things/Hotels</a>
+		<a href="Form.html">Contact Us</a>
+		<a href="List.html">Activities</a>
+	</div>
+
+	<div style="padding-left:16px">
+		<h2>Contact Us</h2>
+		<p>Lake Winnipesaukee</p>
+	</div>
+	
+	<form action="thankyou.html">
+	  <p> Contact Us: <br>
+  Name:<input type="text" name="name"> <br>
+  Address: <input type="text" name="address"> <br>
+  City: <input type="text" name="city"> <br>
+  State: <input type="text" name="state"> <br>
+  Zip: <input type="text" name="zip"> <br>
+  Phone: <input type="tel" name="phone"> <br>
+  </p>
+  <p>
+    How Important is your Issue 1-10:
+    <select name="Issue">
+      <option value="Not Important">1</option>
+      <option value="Can Wait">2</option>
+      <option value="can wait">3</option>
+      <option valie="can wait"> 4</option>
+        <option value="importnat">5</option>
+      <option value="important">6</option>
+      <option value="important">7</option>
+      <option valie="very important"> 8</option>
+        <option value="Very important">9</option>
+      <option value="Very importnant">10</option>
+      </select>
+  </p>
+ 
+  <p>Type:<br>
+
+  <input type="radio" name="beantype" value="whole"> Question <br>
+  <input type="radio" name="beantype" value="ground"> Need to call
+   
+  </p>
+  <p>
+  Number of questions: <input type="number" name="bags" min="1" max="10">
+  </p>
+  <p>
+    Extras:<br>
+    <input type="checkbox" name="extras[]" value="giftwrap"> Hotel Info <br>
+    <input type="checkbox" name="extras[]" valiue="catalog" checked> Fishing Info
+      <input type="checkbox" name="extras[]" valiue="catalog" checked> Miss Communication
+       <input type="checkbox" name="extras[]" valiue="catalog" checked> Things to do Info
+  </p>
+  <p> Customer Comments:<br>
+  <textarea name="comments"></textarea>
+  </p>
+ 
+  <p>
+  <input type="submit" value="Submit">
+  </p>
+	  <submit></submit>
+	  </form>
+	 
+	</body>
+</html>

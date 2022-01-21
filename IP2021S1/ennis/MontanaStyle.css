@@ -1,0 +1,80 @@
+			/*CSS File*/
+			body {
+			margin: 0;
+			font-family: Arial, Helvetica, sans-serif;
+			color: #111111;
+			background-color:#ADE0F5;
+			color: #000000;
+			font-size: 18px;
+		}
+		h1 {
+		  font-size: 225%;
+		}
+
+		.topnav {
+			overflow: hidden;
+			background-color: #777777;
+
+
+		}
+
+		.topnav a {
+			float: left;
+			color: #f2f2f2;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: underline;
+			font-size: 17px;
+			width: 17%; /* Five links of equal widths */
+		}
+
+		.topnav a:hover {
+			background-color: #ADE0F5;
+			color: white;
+		}
+
+  .active {
+			background-color: #ADE0F5;
+			color: black;
+		}
+table{
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom:20px;
+  border: thin solid black;
+  caption-side: bottom;
+  border-collapse: collapse;
+}
+td, th{
+  border: thin dotted gray;
+  padding: 5px;
+}
+caption{
+  font-style: italic;
+  padding-top: 8px;
+}
+tr { background-color: #b00c35;}
+.cellcolor { background-color: #ADE0F5;}
+.center {
+  text-align: center;
+}
+.right{
+  text-align: right;
+}
+li{
+  list-style-type: circle;
+}
+.font{
+  color: #FFFFFF;
+}
+.title{ background-color: #86eaf0;}
+form{
+  padding:5px;
+  border: thin dotted #000000;
+  background-color: #789FFF;
+  margin:5px;
+}
+form textarea{
+  width:500px;
+  height:50px;
+}

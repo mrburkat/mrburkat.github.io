@@ -1,0 +1,71 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Welcome to Buffalo</title>
+	 <link type="text/css" rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <center>
+    <img src="Assets/Banner1.jpg">
+  </center>
+
+<div class="topnav">
+<a href="Index.html">Home</a>
+<a href="list.html">Things to do</a>
+<a href="gallery.html">Gallery</a>
+<a href="table.html">Weather Info</a>
+<a class="active" href="form.html">Order Form</a>
+</div>
+
+<center>
+<div style="padding-left:16px">
+  <h2>Fill out the order form below to purchase a shirt</h2>
+</div>
+
+<form action="thankyou.html" method="GET">
+<p>
+ 
+ <p style="padding-left:16px">
+ Contact Information:<br>
+ Name: <input type="text" name="name"> <br>
+    Address: <input type="text" name="address"> <br>
+    Email <input type="text" name="zip"> <br>
+    Phone: <input type="text" name="phone"> <br>
+</p>
+ 
+ <p>Select a Shirt Style: <br>
+  <input type="radio" name="Residency" value="Short"> Short Sleeve <br>
+  <input type="radio" name="Residency" value="Long"> Long Sleeve <br>
+</p>
+
+<p>
+ Select a Size:<br>
+  <input type="radio" name="Size" value="Adult">Adult Small<br>
+  <input type="radio" name="Size" value="Adult">Adult Medium<br>
+  <input type="radio" name="Size" value="Adult">Adult Large<br>
+  <input type="radio" name="Size" value="Adult">Adult Extra Large<br>
+</p>
+
+ Select a Color:<br>
+  <input type="checkbox" name="extras[]" value="Color">red
+  <input type="checkbox" name="extras[]" value="Color">blue
+  <input type="checkbox" name="extras[]" value="Color">white
+  <input type="checkbox" name="extras[]" value="Color">grey
+
+
+
+<p>
+  Leave us a comment down here:<br>
+  <textarea name="comments"></textarea>
+</p>
+    
+<p>
+  <input type="submit" value="Submit Form ">
+</p>
+    
+</form>
+</center>
+
+</body>
+</html>

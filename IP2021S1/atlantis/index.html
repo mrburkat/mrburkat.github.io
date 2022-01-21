@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+		<meta charset="utf-8">
+		<title> Home Page </title>
+		<link type="text/css" rel="stylesheet" href="style.css">
+	</head>
+	
+	<body>
+		<center>
+	  <img src= "assets/banner 3.jpg">
+	  </center>
+			<a href="index.html">Home</a> |
+			<a href="list.html">About</a> |
+			<a href="gallery.html">Pictures</a> |
+			<a href="table.html">Hotels</a> |
+			<a href="form.html">Reservations</a>
+		</p>
+		<h1>Home </h1>
+		
+		<h3>
+		  Atlantis Bahamas is a lush, oceanside resort located on Paradise Island in The Bahamas. The resort features four distinct hotels: the iconic The Royal, the multigenerational The Coral, the ultraluxury The Cove and the residential-style The Reef. Atlantis Bahamas showcases the world’s largest open-air marine habitat including Dolphin Cay dedicated to conservation, rehabilitation and education. Guest can also enjoy 141-acres of non-stop fun at Aquaventure water park, try their luck at the Atlantis Casino or enjoy various cuisines at local or celebrity chef restaurants. Experience stunning ocean views at the 18-hole par 72 championship Ocean Club Golf Course or get pampered at the Mandara Spa.
+		</h3>
+		
+		<p> Here at Atlantis, the temperature is great year-around. It rarley goes below 60 degress, which makes it the perfect spot for a warm weather getway</p>
+		
+	<div id="myChart" style="width:100%; max-width:800px; height:500px; color: red;"></div>
+	
+		<script>
+google.charts.load('current',{packages:['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+function drawChart() {
+// Set Data
+var data = google.visualization.arrayToDataTable([
+  ['Size', 'High' , 'Low'],
+  ['Jan',79,64],['Feb',79,64],['Mar',81,65],['Apr',83,68],['May',86,71],
+  ['Jun',89,74],['Jul',90,76],['Aug',91,76],
+  ['Sept',90,75],['Oct',87,73],['Nov',83,69],['Dec',80,66]]);
+
+// Set Options
+var options = {
+  title: 'Temperature by Month',
+  hAxis: {title: 'Month'},
+  vAxis: {title: 'Average Temperature'},
+  legend: 'Temperature'
+};
+// Draw
+var chart = new google.visualization.LineChart(document.getElementById('myChart'));
+chart.draw(data, options);
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!--This Table.html page will display more specific details about Weather, Water Temp and Current, Wave length/tide, and The different fishing spots on Lake winnipesaukee-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Table</title>
+	 <link type="text/css" rel="stylesheet" href="style.css">
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+</head>
+<body>
+  
+<img src="Assets/Example3.png" height=200, Width=1377, length=200>
+<!-- Create a Menu -->
+	<div class="topnav">
+		<a href="index.html">Home</a>
+		<a href="Gallery.html">Gallery</a>
+		<a href="Table.html">Cool Things/Hotels</a>
+		<a href="Form.html">Contact Us</a>
+		<a href="List.html">Activities</a>
+	</div>
+
+	<div style="padding-left:16px">
+		<h2>Table</h2>
+		<p>Lake Winnipesaukee</p>
+	</div>
+
+<script>
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+function drawChart() {
+var data = google.visualization.arrayToDataTable([
+  ['Months', 'inches', {role: 'style'}],
+   ['Jan',17.6, 'color:#fa8072'],
+  ['Feb',16, 'color:#fa8072'],
+  ['March',11.6, 'color:#fa8072'],
+  ['April',2.7, 'color:#fa8072'],
+  ['May',0, 'color:#fa8072'],
+  ['Jun',0, 'color:#fa8072'],
+  ['July',0, 'color:#fa8072'],
+  ['Aug',0, 'color:#fa8072d'],
+  ['Sep',0, 'color:#fa8072'],
+  ['Oct',0.2, 'color:#fa8072'],
+   ['Nov',3.1, 'color:#fa8072'],
+  ['Dec',15.4, 'color:#fa8072']
+]);
+var options = {
+  title:'Average snowfall in Lake Winnipesaukee (yearly)'
+};
+
+var chart = new google.visualization.BarChart(document.getElementById('myChart'));
+  chart.draw(data, options);
+}
+</script>
+  <div id="myChart" style="width:100%; max-width:600px; height:500px;"></div>
+  <h1>Best Hotels At Lake Winnipesaukee</h1>
+     <p> Lake Winnipauakee is know for its luxurious features. The Hotels here at Lake Winnipesuakee can be very expensive and sometimes not worth the price. The Table below includes the best hotels for there price a night.</p>
+      <table>
+        <caption>
+  Hope these Hotels work for you!</caption>
+      <tr>
+        <th>Name of Hotel</th>
+        <th>Rating (*)</th>
+        <th>Price a night</th>
+        <th>Incentives</th>
+      </tr>
+      <tr>
+        <td>Mill Falls at the Lake</td>
+        <td class="center">4.3*</td>
+        <td class="center">$127</td>
+        <td>Breakfast, Right on Water, Hotub/Indoor Pool, Free Parking, Free Wifi</td>
+      </tr>
+      <tr class="cellcolor">
+        <td tr class="cellcolor">Lake Opechee Inn and Spa</td>
+        <td class="center">4.6*</td>
+        <td class="center">$194</td>
+        <td>Free Breakfast, Hot tub/Indoor Pool, VIP Rooms, Free Wifi, </td>
+      </tr>
+      <tr>
+        <td>Center Harbor Inn</td>
+        <td class="center">4.6*</td>
+        <td class="center">$155</td>
+        <td>Free Breakfast, Air Conditioning, Hotub, Free parking</td>
+      <tr class="cellcolor">
+        <td>Wolfeboro Inn</td>
+        <td class="center">4.1*</td>
+        <td class="center">$143</td>
+        <td>Pets Allowed, Bar, Air Conditioning, Free Wi-Fi</td>
+      </tr>
+       <tr>
+        <td>Bay Point at Mill Falls</td>
+        <td class="center">4.5*</td>
+        <td class="center">$205</td>
+        <td>On Water, Pets allowed, Hotub, Air conditioning, Free parking</td>
+      </tr>
+    </table>
+	</body>
+</html>

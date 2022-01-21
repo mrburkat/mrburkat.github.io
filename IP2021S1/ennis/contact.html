@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="icon" href="Montana.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form</title>
+<link type="text/css" rel="stylesheet" href="MontanaStyle.css">
+</head>
+<body>
+  <center>
+    <img src="Assets/Banner1.jpg">
+  </center>
+		
+		<div class="topnav">
+		<a href="index3.html">Home</a>
+		<a href="activity.html">Activities</a>
+		<a href="photos.html">Photo Gallery</a>
+		<a href="Temps.html">Weather and Temps</a>
+		<a class="active" href="contact.html">Email Form</a>
+	</div>
+
+	
+<div style="padding-left:16px">
+      <h1>Fill out the form to get notified or plan a trip!</h1>
+	</div>
+	<center>
+	<form action="thankyou.html" method="GET">
+	<p>
+	  <p style="padding-left:16px">
+	  Email Form:<br>
+	  Name: <input type="text" name="name"> <br>
+    Address: <input type="text" name="address"> <br>
+    Email <input type="text" name="zip"> <br>
+    Phone: <input type="text" name="phone"> <br>
+	</p>
+	  <p>Do you live in Montana? <br>
+    <input type="radio" name="Residency" value="No"> No <br>
+    <input type="radio" name="Residency" value="Yes"> Yes <br>
+	</p>
+	<p>
+	  Would you like to recieve notifiactions? <br>
+	  <input type="radio" name="Notif" value="No"> I do not want notifications<br>
+    <input type="radio" name="Notif" value="Yes" checked="true">I want to recieve notifications<br>
+	</p>
+	<p>
+      Plan a visit to Ennis! Plan a trip here: <br>
+      <input type="date" name="date"> <input type="date" name="date">
+    </p>
+    <input type="checkbox" name="extras[]" value="NoNotif">I'm not planning a trip today
+    
+    <p>
+      <input type="submit" value="Submit Form ">
+    </p>
+        <p>Leave a comment down here:<br>
+    <textarea name="comments"></textarea>
+    </p>
+</form>
+	</center>
+
+</body>
+</html>
+
+
+

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Table</title>
+	<!--Title of the webpage-->
+	<link type="text/css" rel="stylesheet" href="Website.css">
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+<body>
+  <img src="Assets/Table Banner.jpg">
+	<div class="topnav">
+	  <a href="Index.html">Home</a> <!--Unactive Tab-->
+	  <a href="List.html">Places to Visit</a> <!--Unactive Tab-->
+	  <a href="Gallery.html">Photos</a> <!--Unactive Tab-->
+		<a class="active" href="Table.html">Population</a> <!--Active Tab-->
+		<a href="Forms.html">Contant Us</a> <!--Unactive Tab-->
+	</div>
+
+	<div style="padding-left:16px">
+		<h1>Statistics of Texas from the Years 2011-2021</h1>
+		<h3>Population<h3>
+	</div>
+  <div id="myChart" style="width:400%; max-width:1000px; height:600px;"></div>
+  <script>
+google.charts.load('current',{packages:['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+function drawChart() {
+// Set Data
+var data = google.visualization.arrayToDataTable([
+  ['Year', 'Population'],
+  ['2011',      25.6],
+  ['2012',      26.1],
+  ['2013',      26.5],
+  ['2014',        27],
+  ['2015',      27.5],
+  ['2016',      27.9],
+  ['2017',      28.3],
+  ['2018',      28.6],
+  ['2019',        29],
+  ['2020',      29.4],
+  ['2021',      29.7]
+]);
+// Set Options
+var options = {
+  title: 'Average Population for each Year',
+  hAxis: {title: 'Year'},
+  vAxis: {title: 'Average Population in Millions'},
+  legend: 'none',
+  crosshair: {trigger: 'both'} // Display crosshairs on focus and selection.
+};
+// Draw
+var chart = new google.visualization.LineChart(document.getElementById('myChart'));
+chart.draw(data, options);
+}
+</script>
+<p>The growth from 2011 to 2021 in Texas has greatly increased. The Lone Star State has gone from 25.6 million in the year 2011 to around 29.7 Million in the current year.</p>
+<table>
+  <caption>The population of Texas from 2011-2021</caption>
+  <tr class="redcolor">
+    <th>Year</th>
+    <th>Population</th>
+  </tr>
+  <tr>
+    <td>2011</td>
+    <td>25.6 Million</td>
+  </tr>
+  <tr class="bluecolor">
+    <td>2012</td>
+    <td>26.1 Million</td>
+  </tr>
+  <tr class="redcolor">
+    <td>2013</td>
+    <td>16.5 Million</td>
+  </tr>
+  <tr>
+    <td>2014</td>
+    <td>27 Million</td>
+  </tr>
+  <tr class="bluecolor">
+    <td>2015</td>
+    <td>27.5 Million</td>
+  </tr>
+  <tr class="redcolor">
+    <td>2016</td>
+    <td>27.9 Million</td>
+  </tr>
+  <tr>
+    <td>2017</td>
+    <td>28.3 Million</td>
+  </tr>
+  <tr class="bluecolor">
+    <td>2018</td>
+    <td>28.6 Million</td>
+  </tr>
+  <tr class="redcolor">
+    <td>2019</td>
+    <td>29 Million</td>
+  </tr>
+  <tr>
+    <td>2020</td>
+    <td>29.4 Million</td>
+  </tr>
+  <tr class="bluecolor">
+    <td>2021</td>
+    <td>29.7 Million</td>
+  </tr>
+</table>
+</body>
+</html>
+
+

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Table</title>
+		    <link type="text/css" rel="stylesheet" href="style.css">
+		    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+<!-- The table.html page displays the plan of travelling the Moutain Tai-->
+<body>
+<p style="text-align:center;"><img src="assets/banner 2.jpg"></P>
+	<div class="topnav">
+		<a class="active" href="home.html">Home</a>
+		<a href="activity.html">Activity</a>
+		<a href="gallery.html">Gallery</a>
+		<a href="table.html">information</a>
+		<a href="form.html">log</a>
+	</div>
+	<h3><a href ="https://www.cdc.gov/coronavirus/2019-ncov/travelers/international-travel-during-covid19.html#:~:text=CDC%20recommends%20that%20travelers%20who,at%20least%2060%25%20alcohol).">Travel Announcements During Covid-19</a></h3>
+<h2>The average temperature in each month</h2>
+	<div id="myChart" style="width:100%; max-width:600px; height:500px;"></div>
+  <script>
+google.charts.load('current',{packages:['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+function drawChart() {
+// Set Data
+var data = google.visualization.arrayToDataTable([
+  ['month', 'average lowest temperature','average highest tempature'],
+  ['1',      -4,                 2],
+  ['2',      -2,                 5],
+  ['3',       3,                 10],
+  ['4',       9,                 17],
+  ['5',       15,                22],
+  ['6',       19,                26],
+  ['7',       22,                27],
+  ['8',       21,                26],
+  ['9',       16,                23],
+  ['10',      11,                10],
+  ['11',      3,                 10],
+  ['12',      -3,                4]
+]);
+// Set Options
+var options = {
+  title: 'Temperatures(°C)',
+  hAxis: {title: 'months'},
+  vAxis: {title: 'Tempatures'},
+  legend: 'none'
+};
+// Draw
+var chart = new google.visualization.LineChart(document.getElementById('myChart'));
+chart.draw(data, options);
+}
+</script>
+
+
+
+
+
+
+	<div style="padding-left:16px">
+	</div>
+	<h6>Resignation of a hotel is always a begining of a wonderful journey. This data provide the detailed information of local hotels. The travellers would choose the hotels more carefully. The cost of hotels will change depeond one the different date and seasons. Have a good trip!!! </h6>
+	<table>
+	  <caption>The information of hotel</caption>
+	<tr>
+	  <th>Hotel names</th>
+	  <th>Reivews</th>
+	  <th>Comment</th>
+	  <th>Distance from Mountai Tai</th>
+	  <th>Cost</th>
+	  </tr>
+	  <tr class="cellcolor">
+        <td>Yunchao Hotel</td>
+        <td class="right">3029</td>
+        <td class="center">Excellent</td>
+        <td class="center">0.4km</td>
+        <td class="right">$54</td>
+      </tr>
+       <tr>
+        <td>XianJu Hotel</td>
+        <td class="right">539</td>
+        <td class="center">very Good</td>
+        <td class="center">0.44km</td>
+        <td class="right">$45</td>
+      </tr>
+       <tr class="cellcolor">
+        <td>Tai'an Baolong Yijun Hotel</td>
+        <td class="right">2769</td>
+        <td class="center">Outstanding</td>
+        <td class="center">6.35km</td>
+        <td class="right">$45</td>
+      </tr>
+       <tr>
+        <td>Wanda Realm Tai'an</td>
+        <td class="right">3776</td>
+        <td class="center">Outstanding</td>
+        <td class="center">8.98km</td>
+        <td class="right">$68</td>
+      </tr>
+       <tr class="cellcolor">
+        <td>Ramada Plaza by Wyndham Taian</td>
+        <td class="right">3945</td>
+        <td class="center">Outstanding</td>
+        <td class="center">5.98km</td>
+        <td class="right">$52</td>
+      </tr>
+       <tr>
+        <td>Holiday Inn Express taian Center</td>
+        <td class="right">1003</td>
+        <td class="center">Outstading</td>
+        <td class="center">7.78km</td>
+        <td class="right">$41</td>
+      </tr>
+       <tr class="cellcolor">
+        <td>Luxury Blue Horizon Hotel</td>
+        <td class="right">3913</td>
+        <td class="center">Perfect</td>
+        <td class="center">7.88km</td>
+        <td class="right">$54</td>
+      </tr>
+       <tr>
+        <td>Madison taishan Lijing Hotelo Hotel</td>
+        <td class="right">2270</td>
+        <td class="center">Outstanding</td>
+        <td class="center">6.3km</td>
+        <td class="right">$41</td>
+      </tr>
+       <tr class="cellcolor">
+        <td>Tianwaicun Resort Hotel </td>
+        <td class="right">374</td>
+        <td class="center">Outstanding</td>
+        <td class="center">5.73km</td>
+        <td class="right">$23</td>
+      </tr>
+       <tr>
+        <td>Dongyue Hotel</td>
+        <td class="right">876</td>
+        <td class="center">Excellent</td>
+        <td class="center">6.17km</td>
+        <td class="right">$58</td>
+      </tr>
+	</table>
+	<h5>To choose your flight, please be careful about the date and distinations. The price will change depeond on the different situations. Have a good trip!!!</h5>
+	<table>
+	 <caption>The information of flight</caption>
+	 <tr>
+	  <th>flight company</th>
+	  <th>distination</th>
+	  <th>Distance from Taian</th>
+	  <th>Cost</th>
+	  </tr>
+	  <tr class="cellcolor">
+        <td>China Eastern</td>
+        <td class="right">Qingdao</td>
+        <td class="center">347.1km</td>
+        <td class="right">5555$</td>
+      </tr>
+	  <tr>
+        <td>United, Air Canada, China Eastern</td>
+        <td class="right">Jinan</td>
+        <td class="center">80.2km</td>
+        <td class="right">$5960</td>
+      </tr>
+      <tr class="cellcolor">
+        <td>Air Canada, China Southern</td>
+        <td class="right">Yantai</td>
+        <td class="center">516km</td>
+        <td class="right">$5830</td>
+      </tr>
+      <tr>
+        <td>ANA, China Eastern, Shanghai Airlines</td>
+        <td class="right">Weihai</td>
+        <td class="center">577km</td>
+        <td class="right">$7610</td>
+      </tr>
+      <tr class="cellcolor">
+        <td>United, Air Canada, China Southern, China Eastern</td>
+        <td class="right">Rizhao</td>
+        <td class="center">278km</td>
+        <td class="right">$5090</td>
+      </tr>
+      <tr>
+        <td>United, Air Canada, Shanghai Airlines</td>
+        <td class="right">Jining</td>
+        <td class="center">139km</td>
+        <td class="right">$4916</td>
+      </tr>
+      <tr class="cellcolor">
+        <td>United, Air Canada, China Southern, China Eastern</td>
+        <td class="right">Dongying</td>
+        <td class="center">286km</td>
+        <td class="right">$5599</td>
+      </tr>
+	</table>
+</body>
+</html>
+
+
+
