@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form</title>
+	<link type="text/css" rel="stylesheet" href="style.css">
+</head>
+<body>
+  <img src="Assets/mybanner.jpg" width="1200">
+  
+	<div class="topnav">
+	   <a href="index.html">Home</a>
+		<a href="gallery.html">Gallery</a>
+		<a href="table.html">Weather</a>
+		<a href="list.html">Attractions</a>
+		<a class="active" href="form.html">Hotel</a>
+	</div>
+
+	<div style="padding-left:16px">
+		<h1>Book a hotel today!</h1>
+		<h3>Form</h3>
+	</div>
+<form action="thankyou.html" method="GET">
+<p>Information for Hotel: <br>
+  Name: <input type="text" name="name"> <br>
+  Address: <input type="text" name="address"> <br>
+  City: <input type="text" name="city"> <br>
+  State: <input type="text" name="state"> <br>
+  Zip: <input type="text" name="zip"> <br>
+  Phone: <input type="tel" name="phone"> <br>
+</p>
+   <p>
+  Date of arrival <input type="date" name="date">
+  Date you leave <input type="date" name="date">
+   </p>
+   <p>
+   Number of People: <input type="number" name="people" min="1" max="10">
+   </p>
+<p>
+ Accomidations:<br>
+<input type="checkbox" name="Accomidations[]" value="VIP lounge">VIP lounge<br>
+<input type="checkbox" name="Accomidations[]" value="Parking valet">Parking valet
+</p>
+<p>Customer Comments:<br>
+<textarea name="comments"></textarea>
+</p>
+  <input type="submit" value="Book now">
+</form>
+</body>
+</html>
+
+

@@ -1,0 +1,107 @@
+	body {
+			margin: 0;
+			font-family: Arial, Helvetica, sans-serif;
+			background-color:#24acdb;
+			color: #000000;
+		}
+
+		.topnav {
+			overflow: hidden;
+			background-color: #0bf45a;
+		}
+
+		.topnav a {
+			float: left;
+			color: #f2f2f2;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-size: 17px;
+			width: 17%; /* Five links of equal widths */
+		}
+
+		.topnav a:hover {
+			background-color: #0bf45a;
+			color: black;
+		  
+		}
+
+		.topnav a.active {
+			background-color: #f40b1e;
+			color: white;
+		}
+		
+h1{
+		font-size: 225%;
+		color: #000000;
+}
+		
+h2{
+  font-size: 150%;
+  font-weight: normal;
+  color: #000000;
+}
+	table {
+  margin-left: 20px;
+  margin-right: 20px;
+  border: thin solid black;
+  caption-side: bottom;
+  border-collapse: collapse;
+  }td, th {
+  border: thin dotted gray;
+  padding: 5px;
+  }caption {
+    font-style: italic;
+  padding-top: 8px; }
+
+.center {
+  text-align: center;
+}
+.right {
+  text-align: right;
+}
+th {
+  background-color: #435FBE;
+  color: white;}
+.cellcolor { background-color: #BE4369;
+  color:white;
+}
+ table table th {
+ background-color:white; }
+ 
+
+li {
+  list-style-type: square;
+}
+li {
+  list-style-type: "\1F44D";
+}
+form {
+  display: table;
+  padding: 10px;
+  border: thin dotted #7e7e7e;
+  background-color: #789FFF;
+  margin: 20px;
+}
+form textarea {
+  width: 500px;
+  height: 50px;
+}
+
+div.tablerow {
+  display: table-row;
+}
+
+div.tablerow {
+  display: table-cell;
+  vertical-align: top;
+  padding: 3px;
+}
+
+div.tablerow p:first-child {
+  text-align: right;
+}
+
+p.heading {
+  font-weight: bold;
+}

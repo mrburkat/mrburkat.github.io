@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>template</title>
+	<link type="text/css" rel="stylesheet" href="style.css">
+</head>
+<body>
+ <img src="Assets/Banner.jpg" width="1270" height="120">
+	<div class="topnav">
+		<a href="Index.html">Home</a>
+		<a href="gallery.html">Pictures</a>
+		<a class="active" href="table.html">Hotel Information</a>
+		<a href="list.html">Fixture</a>
+		<a href="form.html">Poll</a>
+	</div>
+
+	<div style="padding-left:16px">
+		<h2>Hotel Charts</h2>
+		
+	</div>
+ <div id="myChart" style="width:100%; max-width:500px; height:500px;"></div>
+
+ <script>
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+function drawChart() {
+var data = google.visualization.arrayToDataTable([
+  ['Country', 'Star Ratings'],
+  ['Bay Point at Mill Falls',5],
+  ['Church Landing at Mill Falls',4.5],
+  ['The Naswa Resort',4.4],
+  ['Bay Side In',4],
+  ['The Lakeview In and Cottages',3.5]
+]);
+
+var options = {
+  title: 'What Hotel Should I Stay In?'
+};
+
+var chart = new google.visualization.BarChart(document.getElementById('myChart'));
+  chart.draw(data, options);
+}
+
+
+</script>
+<h1> The Best Rated Hotels </h1>
+<p> Here are the hotels that will give you the best experience on your vacation!</p>
+
+<table>
+  <caption> Come catch a glimpse of a world class experience at the lake!</caption>
+  <tr>
+   <th> Hotels </th>
+   <th> Ratings</th>
+   
+  </tr>
+  <tr class="cellcolor">
+   <td> Bay Point at Mill Falls</td>
+   <td> 5 stars </td>
+  </tr>
+  <tr>
+   <td> Church Landing at Mill Falls</td>
+   <td> 4.5 starts </td>
+  </tr>
+  <tr class="cellcolor">
+   <td>The Naswa Resort </td>
+   <td> 4.4 stars </td>
+  </tr>
+  <tr>
+   <td> Bay Side In </td>
+   <td> 4 stars </td>
+  </tr>
+  <tr class="cellcolor">
+    <td> The Lakeview Cottages</td>
+    <td> 3 stars </td>
+  </tr>
+</table>
+</body>
+</html>
+

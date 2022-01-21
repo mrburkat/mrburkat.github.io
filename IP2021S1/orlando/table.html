@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>template</title>
+	<link type="text/css" rel="stylesheet" href="style.css">
+	
+</head>
+<body>
+  <img src= "assets/Banner2.jpg">
+   <!--This table.html page shows the upcoming weather-->
+	<div class="topnav">
+			<a  href="index.html">Home</a>
+		<a href="list.html">Photo album</a>
+		<a href="gallery.html">gallery</a>
+		<a class="active" href="table.html">Forecast</a>
+		<a href="form.html">Contact us!</a>
+	</div>
+
+	<div style="padding-left:16px">
+		<h2>Temperatures</h2>
+		
+	</div>
+<script>
+google.charts.load('current',{packages:['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+function drawChart() {
+// Set Data
+var data = google.visualization.arrayToDataTable([
+  ['Price', 'Size'],
+  ['Jan',60],['Feb',60],['Mar',70],['Apr',75],['May',80],
+  ['Jun',75],['Jul',80],['Aug',80],['Sep',77],['Oct',72,],['Nov',70],['Dec',65]
+  
+]);
+// Set Options
+var options = {
+  title: 'Temperature',
+  hAxis: {title: 'months'},
+  vAxis: {title: 'temperature (F)'},
+  legend: 'none'
+}
+;
+// Draw
+var chart = new google.visualization.LineChart(document.getElementById('myChart'));
+chart.draw(data, options);
+}
+</script>
+<div id="myChart" style="width:100%; max-width:600px; height:500px;"></div>
+<caption> Florida temperatures</caption>
+</body>
+</html>
+

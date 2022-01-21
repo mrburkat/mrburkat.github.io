@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Table</title>
+<!-- This table.html page displays the weather for the next month in NYC. -->
+	<link type="text/css" rel="stylesheet" href="style.css">
+</head>
+<body>
+  <img src="Assets/mybanner.jpg" width="1200">
+  
+	<div class="topnav">
+	  <a href="index.html">Home</a>
+		<a href="gallery.html">Gallery</a>
+		<a class="active" href="table.html">Weather</a>
+		<a href="list.html">Attractions</a>
+		<a href="form.html">Hotel</a>
+	</div>
+
+	<div style="padding-left:16px">
+		<h1>Weather in New York</h1>
+		<p><span style='font-size:80px;'>&#9925;</span></p>
+	</div>
+<div id="myChart" style="width:100%; max-width:600px; height:500px;"></div>
+<script>
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+function drawChart() {
+var data = google.visualization.arrayToDataTable([
+  ['Months', 'Degrees Fahrenheit'],
+  ['January',39],
+  ['Febuary',42],
+  ['March',50],
+  ['April',62],
+  ['May',71],
+  ['June',79],
+  ['July',85],
+  ['August',83],
+  ['September',76],
+  ['October',64],
+  ['November',54],
+  ['December',44]
+]);
+
+var options = {
+  title:'Average high per month',
+  backgroundColor: 'F4BF9C'
+};
+
+var chart = new google.visualization.BarChart(document.getElementById('myChart'));
+  chart.draw(data, options);
+}
+</script>
+<h1>Average days of rain per month</h1>
+<p>Tells you the best months to go on your trip</p>
+<table>
+  <caption>Hope to see you in New York soon!</caption>
+	   <tr>
+      <th>Month</th>
+      <th>Days it rains</th>
+      </tr>
+      <tr class="cellcolor">
+      <td class="center">January</td>
+      <td class="center">8 days</td>
+      </tr>
+      <tr>
+      <td class="center">Febuary</td>
+      <td class="center">7 days</td>
+      </tr>
+      <tr class="cellcolor">
+      <td class="center">March</td>
+      <td class="center">8 days</td>
+      </tr>
+      <tr>
+      <td class="center">April</td>
+      <td class="center">8 days</td>
+      </tr>
+      <tr class="cellcolor">
+      <td class="center">May</td>
+      <td class="center">9 days</td>
+      </tr>
+      <tr>
+      <td class="center">June</td>
+      <td class="center">8 days</td>
+      </tr>
+      <tr class="cellcolor">
+      <td class="center">July</td>
+      <td class="center">8 days</td>
+      </tr>
+      <tr>
+      <td class="center">August</td>
+      <td class="center">7 days</td>
+      </tr>
+      <tr class="cellcolor">
+      <td class="center">September</td>
+      <td class="center">7 days</td>
+      </tr>
+      <tr>
+      <td class="center">October</td>
+      <td class="center">6 days</td>
+      </tr>
+      <tr class="cellcolor">
+      <td class="center">November</td>
+      <td class="center">7 days</td>
+      </tr>
+      <tr>
+      <td class="center">December</td>
+      <td class="center">8 days</td>
+      </tr>
+</table>
+</body>
+</html>
+
+

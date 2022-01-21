@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>template</title>
+	<link type="text/css" rel="stylesheet" href="style.css">
+</head>
+
+<body>
+ <img src="Assets/Banner.jpg" width="1270" height="120">
+	<div class="topnav">
+		<a href="Index.html">Home</a>
+		<a href="gallery.html">Pictures</a>
+		<a href="table.html">Hotel Information</a>
+		<a href="list.html">Fixture</a>
+		<a class="active" href="form.html">Poll</a>
+	</div>
+
+	<div style="padding-left:16px">
+		<h2></h2>
+		<p>Lake Poll</p>
+	</div>
+	<form action="Thankyout.html" method="get">
+	  
+
+ 
+  
+  <p>
+    Choose your Favorite Lake Activity:
+    <select name="">
+    <option value="">Boating</option>
+    <option value=""> Swimming</option>
+    <option value="">Paddle Boarding</option>
+    <option value="">Tanning</option>
+    </select>
+  </p>
+  <p>
+    Type: <br>
+  
+    <p> <input type="radio" name="beantype" value="Crowded"> Populated Area<br> </p>
+
+    <input type="radio" name="beantype" value="Private" > Private Area
+  
+  <p> Number of People: <input type="number" name="People" min="1" max="10"></p>
+  <p>Most Convenient Vacation Date: <input type="date" name="date"> </p>
+<p>
+Extras:<br>
+
+<input type="checkbox" name="extras[]" value="Boat Rentals"> Boat Rental
+<br>
+<input type="checkbox" name="extras[]" vlaue="Jet Ski Rentals" checked>
+Jet ski Rental
+
+</p>
+  <p> Personal Information: <br>
+  Name: <input type="text" name="address"> <br>
+  City: <input type="text" name="state"> <br>
+  State: <input type="text" name="zip"> <br>
+  
+  Phone:<input type="text" name="phone"> <br>
+   Questions about the Lake: <textarea name="Questions"> </textarea>
+  </p>
+<p><input type="submit" value="Order Now"></p>
+
+ 
+
+
+	</form>
+
+</body>
+</html>
+

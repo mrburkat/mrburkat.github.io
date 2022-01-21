@@ -1,0 +1,107 @@
+
+<html>
+	<head>
+	   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+		<meta charset="utf-8">
+		<title> Book a Flight </title>
+		<link type="text/css" rel="stylesheet" href="style.css">
+	</head>
+	<body>
+	  <img src="assets/banner3.jpg">
+	  <!-- this is going to be a form of a guest's contact information who wants to book a flight to maui.-->
+		<p><!-- Create a Menu -->
+			<a href="index.html">Home</a> |
+			<a href="list.html">Activities and Stay</a> |
+			<a href="table.html">Place Reviews</a> |
+			<a href="gallery.html">Gallery</a> |
+			<a href="form.html">Book A Flight</a>
+		</p>
+		<h1> Book a Flight </h1>
+		<h2>Fill out the form below to get started!</h2>
+		 <form action=thankyou.html method="GET">
+    <p>
+    Name: <input type="text" name="name"> <br>
+    Address: <input type="text" name="address"> <br>
+    City: <input type="text" name="city"> <br>
+    State: <input type="text" name="state"> <br>
+    Zip: <input type="text" name="zip"> <br>
+    Email Address: <input type="text" name="email address"> <br>
+    Phone Number: <input type="text" name="phone number"> <br>
+    </p>
+    <p>
+     Place you'd like to stay:
+   
+   <select name="stay">
+     <option value="Grand Wailea">Grand Wailea </option>
+     <option value="Four Seasons at Wailea">Four Seasons at Wailea </option>
+     <option value="Wailea Ekolu Village">Wailea Ekolu Village </option>
+     <option value="Fairmont Kea Lani">Fairmont Kea Lani </option>
+     <option value="Wailea Beach Villas">Wailea Beach Villas </option>
+     <option value="Maui Coast Hotel">Maui Coast Hotel </option>
+     <option value="Maui Seaside Hotel">Maui Seaside Hotel </option>
+     <option value="Courtyard by Marriott Maui Kahului">Courtyard by Marriott Maui Kahului </option>
+     <option value="Maui Beach Hotel">Maui Beach Hotel </option>
+     <option value="Kaanapali Beach Hotel">Kaanapali Beach Hotel </option>
+   </select>
+   
+   </p>
+   <p>
+     
+    Travel Dates: <input type="date" name="startdate"><input type="date" name="departure">
+   
+     
+    <p>
+    Number of guests: <input type="number" name="bags" min="1" max="10">
+    </p>
+     <p>
+    Vaccinated: <br>
+    <input type="radio" name="vaccinated" value="Yes"> Yes<br>
+     <input type="radio" name="vaccinated" value="No"> No<br>
+   </p>
+   
+   <h4>Note: each person must be vaccinated and show proof of vaccination to travel to the islands</h4>
+   
+    <p>
+    Comments: <br>
+    <textarea name="comments"></textarea>
+   </p>
+   
+   <p>
+      <input type="submit" value= "Submit">
+      
+    </p>
+    
+    </form>
+	 <div id="myChart" style="width:100%; max-width:600px; height:500px;"></div>
+<script>
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+function drawChart() {
+var data = google.visualization.arrayToDataTable([
+  ['Months', 'Temp'],
+  ['January',71],
+  ['February',70],
+  ['March',71],
+  ['April',73],
+  ['May',74],
+  ['June',76],
+  ['July',77],
+  ['August',78],
+  ['September',77],
+  ['October',77],
+  ['November',74],
+  ['Decemer',77]
+  
+]);
+
+var options = {
+  title:'Average Temperatures in Maui'
+};
+
+var chart = new google.visualization.BarChart(document.getElementById('myChart'));
+  chart.draw(data, options);
+}
+</script>
+	</body>
+</html>

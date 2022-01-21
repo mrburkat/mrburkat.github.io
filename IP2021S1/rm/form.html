@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>template</title>
+		  <link type="text/css" rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+  <!-- this is the list page form page, here is where customers will fill out a form and book their stay-->
+      <img src="Assets/banner1.jpg">
+
+	<div class="topnav">
+    <a class="active" href="index.html">Home</a>
+		<a href="table.html">More Info</a>
+		<a href="list.html">Activities</a>
+		<a href="gallery.html">Gallery</a>
+		<a href="form.html">Book Here</a>
+	</div>
+  <h1>Book Your Stay</h1>
+	<div style="padding-left:16px"></div>
+    <h2>Fill out the form below to book a hotel</h2>
+    <form action="thankyou.html" method="GET">
+  
+      <p>
+          Name:<input type= "text" name="name"> <br>
+          Address: <input type= "text" name="address"> <br>
+          City: <input type= "text" name="city"> <br>
+          State: <input type= "text" name="state"> <br>
+          Zip: <input type= "text" name="zip"> <br>
+          Phone: <input type= "text" name="phone"> <br>
+          Email: <input type="text" name="email"> <br>
+      </p>
+      
+     
+    <p>
+      Choose Your Hotel:
+      <select name="Hotels">
+          <option value= "Fairmont Mayakoba">Fairmont Mayakoba</option>
+          <option value= "Las Villas Akumal"> Las Villas Akumal</option>
+          <option value= "The Reef Coco Beach"> The Reef Coco Beach</option>
+          <option value= "Playcar Palace"> Playcar Palace</option>
+      </select>
+    </p>
+    
+     <p>
+      Travel Dates: <input type="date" name="Arrival"> <input type="date" name="Departure">
+    </p>
+    
+     <p> Number of Guests: <input type="number" name="Rooms" min="1" max="4" > </p>
+      <p> Number of Rooms: <input type="number" name="bags" min="1" max="3" > </p>
+    
+    <p> Extras:<br>
+          <input type= "checkbox" name="extras[]" value="Transport From Airport">Transport From Airport<br>
+          <input type= "checkbox" name="extras[]" value="Decorate">Room Decorated With Flowers (+100$)<br>
+          
+    </p>
+    
+    <p>Customer Comments: <br>
+      <textarea name="comments"></textarea>
+      
+    </p>
+    
+     <p>
+          <input type= "submit" value=" Submit"> <br>
+      </p>
+      
+    
+</form>
+
+</body>
+
+
+</html>
+

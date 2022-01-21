@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>template</title>
+		  <link type="text/css" rel="stylesheet" href="style.css">
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+	
+</head>
+<body>
+    <img src="Assets/banner1.jpg">
+	<div class="topnav">
+		<a class="active" href="index.html">Home</a>
+		<a href="table.html">More Info</a>
+		<a href="list.html">Activities</a>
+		<a href="gallery.html">Gallery</a>
+		<a href="form.html">Book Here</a>
+	</div>
+<h1> Home</h1>
+	<div style="padding-left:16px">
+	</div>
+	
+	 <iframe width="560" height="315" src="https://www.youtube.com/embed/NlBuxHbjfzo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	 
+<div id="myChart" style="width:100%; max-width:600px; height:500px;"></div>
+<script>
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+function drawChart() {
+var data = google.visualization.arrayToDataTable([
+  ['Country', 'Temp'],
+  ['January',81],
+  ['Febuary',81],
+  ['March',84],
+  ['April',86],
+  ['May',88],
+  ['June', 89],
+  ['July',90],
+  ['August',90],
+  ['September',88],
+  ['October',86],
+  ['November',84],
+  ['December',82]
+
+]);
+
+var options = {
+  title:'Average Temperature in Rivera Maya Per Month '
+};
+
+var chart = new google.visualization.BarChart(document.getElementById('myChart'));
+  chart.draw(data, options);
+}
+</script>
+
+</body>
+</html>
+
+

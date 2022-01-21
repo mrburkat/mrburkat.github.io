@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!-- This table.html page will display hidden gems in Myrtle Beach. It will specify their locations, what type of place it is, and a link to their respective web sites. -->
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Weather!</title>
+			<link type="text/css" rel="stylesheet" href="style.css">
+		<style type="text/css">
+			body {
+				background-color: #BFE6FF;
+				color: #000000;
+			}
+		</style>
+		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	</head>
+	<body>
+	  <img src="Assets/1st Banner.jpg">
+		<p><!-- Create a Menu -->
+			<a href="index.html">Home</a> |
+			<a href="list.html">Facts</a> |
+			<a href="gallery.html">Attractions</a> |
+			<a href="table.html">Weather</a> |
+			<a href="form.html">Contact Us</a>
+		</p>
+		<h1>What's the Weather in Myrtle Beach? Well Wouldn't You Like to Know, Weather Boy.</h1>
+		<div id="myChart" style="width:100%; max-width:600px; height:500px;"></div>
+		<script>
+google.charts.load('current',{packages:['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+function drawChart() {
+// Set Data
+var data = google.visualization.arrayToDataTable([
+  ['Month', 'Temperature'],
+  ['January',56],['February',59],['March',65],['April',73],['May',79],
+  ['June',85],['July',88],['August',87],
+  ['September',83],['October',75],['November',67],['December', 60]
+]);
+// Set Options
+var options = {
+  title: 'Average Temperature Per Month in Myrtle Beach',
+  hAxis: {title: 'Month'},
+  vAxis: {title: 'Average Temperature'},
+  legend: 'none'
+};
+// Draw
+var chart = new google.visualization.LineChart(document.getElementById('myChart'));
+chart.draw(data, options);
+}
+</script>
+	</body>
+</html>
