@@ -1,0 +1,82 @@
+	body {
+			margin: 0;
+			font-family: Arial, Helvetica, sans-serif;
+			background-color:#ffffcc;
+			color: #000000;
+			font-size: medium;
+		}
+
+		.topnav {
+			overflow: hidden;
+			background-color: #80ccff;
+		}
+
+		.topnav a {
+			float: left;
+			color: #f2f2f2;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-size: 17px;
+			width: 17%; /* Five links of equal widths */
+		}
+
+		.topnav a:hover {
+			background-color: #dddddd;
+			color: black;
+		}
+
+		.topnav a.active {
+			background-color: #ffcccc;
+			color: white;
+		}
+		
+		h1 {
+		  font-family: Arial;
+		  font-weight: bold;
+		}
+		h2 {
+		  font-family: Arial;
+		  font-size: 150%;
+		}
+		p {
+		  font-family: Arial;
+		}
+		
+	table {
+	  margin-left: 20px;
+	  margin-right: 20px;
+  border: thin solid black;
+  caption-side: bottom;
+  border-collapse: collapse;
+	}
+	td, th {
+  border: thin dotted gray;
+  padding: 5px;
+}
+caption {
+  font-style: italic;
+  padding-top: 8px;
+}
+.center {
+  text-align: center;
+}
+th { background-color: #ff9999;
+  
+}
+.cellcolor { background-color: #80ccff;
+}
+.right {
+  text-align: right;
+}
+li {
+  list-style-type: square;
+}
+li {
+  list-style-type: "\1F44D";
+}
+li {
+  list-style-image: url(images.backpack.gif);
+  padding-top: 5px;
+  margin-left: 20px;
+	

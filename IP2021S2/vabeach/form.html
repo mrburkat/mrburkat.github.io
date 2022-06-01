@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form Page</title>
+		<link type="text/css" rel="stylesheet" href="style.css">
+	
+</head>
+<body>
+  <img src="Assets/Banner 2.jpg" width=1200>
+	<div class="topnav">
+		<a href="home.html">Welcome to Virginia Beach!</a>
+		<a href="list.html">Fantastic Activities to do Here</a>
+		<a href="gallery.html">Wonderful Virginia Beach Photos</a>
+		<a href="table.html">Exciting Information about Virginia Beach</a>
+		<a href="form.html" class="active">Do You Want to go to Virginia Beach?</a>
+	</div>
+
+	<div style="padding-left:16px">
+		<h2>Fill This Out to Plan a Trip Here!</h2>
+		<p>Want to plan and book a trip here? Just fill this out!</p>
+	</div>
+<form action="thankyou.html" method="GET">
+  <p> Info for pamplet<br>
+    Name: <input type="text" name="name"><br>
+    Address: <input type="text" name="Address"><br>
+    Phone Number: <input type="text" name="phone number"><br>
+    Email Address <input type="text" name="email address"><br>
+    Date for Arrival: <input type="date" name="Date for arrival"><br>
+    State: <input type="text" name="state"><br>
+  </p>
+  <p>Do you want a Brochure? <br>
+    <input type="radio" name="brochure" value="yes">Yes!<br>
+    <input type="radio" name="brochure" value="no">No<br>
+  </p>
+  <p>
+    Choose your color for the brochure:
+    <select name="brochure">
+      <option value="red">Red</option>
+      <option value="blue">Blue</option>
+      <option value="green">Green</option>
+    </select>
+  </p>
+  <p>
+    <input type="submit" value="submit">
+  </p>
+  </form>
+</body>
+</html>
+
+

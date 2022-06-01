@@ -1,0 +1,106 @@
+body {
+			margin: 0;
+			font-family: verdana, fantasy, monospace;
+			font-size:medium;
+
+			background-color:white;
+			color: #000000;
+		}
+		
+		h1 {
+		  font-size:150%;
+  font-weight:normal;
+  color:black;
+		}
+		
+		p {
+		  font-size:125%;
+  font-weight:normal;
+  color:#262626;
+		}
+
+		.topnav {
+			overflow: hidden;
+			background-color: #800000;
+		}
+
+		.topnav a {
+			float: left;
+			color: black;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-size: 17px;
+			width: 17%; /* Five links of equal widths */
+		}
+
+		.topnav a:hover {
+			background-color: white;
+			color: black;
+		}
+
+		.topnav .active {
+			background-color: #000099;
+			color: white;
+		}
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+table {
+  margin-left: 20px;
+  margin-right: 20px;
+  border: thin solid black;
+  caption-side: bottom;
+  border-collapse: collapse;
+  width: 60%;
+}
+
+td, th {
+  border: thin dotted gray;
+  padding: 5px;
+}
+
+th {
+  background-color: #A8A8A8;
+}
+
+caption {
+  font-style: italic;
+  padding-top: 8px;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+.cellcolor1 {
+  background-color: #FFD700;
+}
+
+.cellcolor2 {
+  background-color: #800020;
+  color: white;
+}
+
+form {
+  padding: 10px;
+  border: thin dotted black;
+  background-color: white;
+		margin: 20px;
+}
+form textarea {
+  width: 500px;
+  height: 50px;
+}

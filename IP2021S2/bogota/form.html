@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Order a Shirt Now!</title>
+	
+	<link type="text/css" rel="stylesheet" href="style.css">
+	 <link rel="shortcut icon" href="assets/colombiaflag.html" type="image/x-icon">
+</head>
+<body>
+  
+  <img src = "assets/banner3.jpg">
+  
+  <header style = "position: relative; top: -10px;">
+    
+	<div class="topnav">
+		<a href="index.html" class="active">Welcome!</a>
+		<a href="gallery.html">Picture Gallergy</a>
+		<a href="lists.html">Lists</a>
+		<a href="table.html">Ratings and Reviews</a>
+		<a href="form.html">Order a Shirt Now!</a>
+	</div>
+
+	<div style="padding-left:16px">
+		<h1>Order a hand-crafted t-shirt from Bogotá now!</h1>
+
+	</div>
+		  <form action = "thankyou.html">
+		    
+   <p>
+     Ship to: <br>
+      Name: <input type="text" name="name"> <br>
+      Address: <input type="text" name="address"> <br>
+      City: <input type="text" name="city"> <br>
+      State: <input type="text" name="state"> <br>
+      Zip: <input type="text" name="zip"> <br>
+      Phone: <input type="tel" name="phone"> <br>
+    </p>
+      
+	  	  
+
+	<p>
+	  T-Shirt Style <br>
+	 <input type= "radio" name="style" value="long-sleeve">long-sleeve<br>
+    <input type= "radio" name="style" value="short-sleeve">short-sleeve<br>
+   </p>
+   
+  <p>
+    Size:<br>
+  <input type= "radio" name="size" value="S">Small <br>
+  <input type= "radio" name="size" value="M">Medium<br>
+   <input type= "radio" name="size" value="L">Large<br>
+ </p>
+      
+ <p> Number of shirts: <input type="number" name="bags" min="1" max="100">  </p>
+      
+       <p>
+          Must arrive after date: <input type="date" name="date">
+          Must arrive by date: <input type="date" name="date">
+        </p>
+          
+ <p>Color of T-Shirt: <input type="color" name="color"></p>
+	 
+
+<input type = "submit">
+	
+</form>
+
+</body>
+</html>

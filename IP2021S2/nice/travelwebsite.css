@@ -1,0 +1,112 @@
+s@font-face {
+font-family: "";
+src: url(".woff"),
+url(".ttf")
+/*^Might change the font.*/
+}
+body {
+	background-color:#7393B3;
+	color: #FFFFFF;
+	font-family: serif;
+  font-size: 18px;
+  font-weight:normal;
+  }
+  
+h1 {
+  font-weight:bold;
+  font-family: serif;
+  font-size: 162%;
+  color:#FFFFFF;
+  }
+
+span {
+	display:inline-block;
+	width: 200px;
+	}
+	
+ul, li{
+  font-style:italic;
+  margin-left:7%;
+  font-family:serif;
+  }
+
+.vertical-menu {
+	display:inline-block;
+	width: 200px;
+	float:left;
+	margin-right:15px;
+	margin-bottom:200px;
+	}
+
+.vertical-menu a{
+	background-color:#C0C0C0;
+	color: #0047AB;
+	display: block;
+	padding: 12px;
+	text-decoration: none;
+  }
+
+.vertical-menu a:hover {
+	background-color: #FFFFFF;
+  }
+
+.vertical-menu .active {
+	background-color:#0047AB;
+	color:#FFFFFF;
+	}
+	
+	table {
+  margin-left: 20px;
+  margin-right: 5px;
+  border: thin solid black;
+  caption-side: bottom;
+  border-collapse:collapse;
+}
+
+th { background-color: #0047AB}
+
+td, th {
+  border: thin solid black;
+}
+
+caption {
+  font-style: italic;
+  padding-top: 8px;
+}
+
+.center {
+  text-align:center;
+}
+
+.right {
+  text-align:right;
+}
+
+.cellcolor { background-color: #708090;}
+
+.font{font-color: }
+
+form {
+  display:table;
+  padding: 10px;
+  border: thin solid #7393B3;
+  background-color: #789FFF;
+  margin: 20px;
+}
+
+form textarea {
+  width:500px;
+  height:50px;
+}
+
+div.tablerow p {
+  display:table-cell;
+  vertical-align: top;
+  padding: 3px;
+}
+div.tablerow p:first-child {
+  text-align: right
+}
+p.heading{
+  font-weight: bold;
+}

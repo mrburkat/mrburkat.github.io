@@ -1,0 +1,100 @@
+		body {
+			margin: 0;
+			font-family: Arial, Helvetica, sans-serif;
+			background-color:#ECDEC3;
+			color: #FD8664;
+			font-size: 100%;
+		}
+
+		.topnav {
+			overflow: hidden;
+			background-color: #B3DBDA;
+		}
+
+		.topnav a {
+			float: left;
+			color: #FD8664;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-size: 17px;
+			width: 17%; /* Five links of equal widths */
+		}
+
+		.topnav a:hover {
+			background-color: #ECDEC3;
+			color: #FD8664;
+		}
+
+		.topnav a.active {
+			background-color: #ECDEC3;
+			color: #FD8664;
+		}
+		
+		h2 {
+		  font-size: 235%;
+		}
+		
+		p {
+		  font-size: 130%;
+		}
+		
+		h3 {
+		  font-size: 170%;
+		}
+		
+		ul {
+		  font-size: 140%;
+		}
+		
+		table {
+  margin-left: 20px;
+  margin-right: 20px;
+  border: thin solid black;
+  caption-side: bottom;
+  border-collapse: collapse;
+}
+
+td, th {
+  border: thin dotted gray;
+  padding: 5px;
+  
+}
+
+caption {
+  font-style: italic;
+  padding-top: 8px;
+}
+
+.center {
+  text-align: center;
+
+}
+
+.right {
+  text-align: right;
+}
+
+th {
+  background-color: #cc6600;
+}
+
+.cellcolor { background-color: #fcba7a; }
+
+li {
+  list-style-type: square;
+}
+
+li {
+  list-style-type: "\1F44D";
+}
+
+li {
+  list-style-image: url(images/backpack.gif);
+  padding-top: 5px;
+  margin-left: 20px;
+}
+
+th {
+  
+}

@@ -1,0 +1,63 @@
+       body {
+			margin: 0;
+			font-family: Arial, Helvetica, sans-serif;
+			background-color:#09C3DB;
+			color:#000000 ;
+			font-size:15px;
+		}
+
+		.topnav {
+			overflow: hidden;
+			background-color: #f6e4ad;
+		}
+
+		.topnav a {
+			float: left;
+			color: #000000;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-size: 17px;
+			width: 17%; /* Five links of equal widths */
+		}
+
+		.topnav a:hover {
+			background-color: #dddddd;
+			color: black;
+		}
+
+		.topnav a.active {
+			background-color: #d2a679;
+			color: black;
+		}
+	h1, h2 {
+	  font-size:333%;}
+	  
+	  table {
+  margin-left: 20px;
+  margin-right: 20px;
+  border: thin solid black;
+  caption-side: bottom;
+  border-collapse: collapse;
+ 
+}
+td, th {
+  border: thin solid black;
+  padding: 5px;
+}
+  td {
+    background-color:white;
+  }
+  th {background-color:#f6e4ad;
+  }
+    .cellcolor{background-color:#DEDEDE;}
+    
+    form {
+  padding: 10px;
+  border: thin dotted #19836e;
+  background-color: #DEDEDE;
+  margin: 20px;
+}
+form textarea {
+  width: 500px;
+  height: 50px;}

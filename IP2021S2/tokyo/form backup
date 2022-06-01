@@ -1,0 +1,33 @@
+<style>
+		body {
+			margin: 0;
+			font-family: 'Fredoka';
+			background-color:#cce6ff;
+			color: #000000;
+		}
+
+		.topnav {
+			overflow: hidden;
+			background-color: #ffffff;
+		}
+
+		.topnav a {
+			float: left;
+			color: #000000;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-size: 17px;
+			width: 17%; /* Five links of equal widths */
+		}
+
+		.topnav a:hover {
+			background-color: #dddddd;
+			color: black;
+		}
+
+		.topnav a.active {
+			background-color: #ffb7c5;
+			color: white;
+		}
+	</style>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>template</title>
+	
+  <link type="text/css" rel="stylesheet" href="style.css">
+	
+</head>
+<body>
+  <img src="Assets/Banner.jpg">
+	<h1>Create your own adventure!</h1>
+
+		<div class="vertical-menu">
+		<a href="index.html" >Home</a>
+		<a href="list.html">Attractions</a>
+		<a href="table.html">Hotels</a>
+		<a href="gallery.html">Photo gallery</a>
+		<a href="form.html" class="active" > Create an adventure</a>
+	</div>
+	
+	<h1> Fill out this form to receive a personalized criteria of your night</h1>
+	<form action= "thankyou.html" method="GET">
+	<p>
+	  
+	  Date: <input type="date" name="date">
+ </p>
+	  
+ Choose your type of night:
+ <select name="vibe">
+ <option value="Adventurous">Adventurous</option>
+ <option value="Relaxing">Relaxing</option>
+ <option value="Educational">Educational</option>
+ <option value="Consumtion and Shopping">Consumtion and Shopping</option>
+ </select><br>
+ 
+ <p>Length: <br>
+
+ <input type="radio" name="beantype" value="whole"> Whole night<br>
+ <input type="radio" name="beantype" value="ground"> Half night
+ </p>
+ 
+ <p>Socialbility: <br>
+
+ <input type="radio" name="social" value="Many">Lets meet some new faces<br>
+ <input type="radio" name="social" value="few"> I'll stick with those already with me <br>
+ <input type="radio" name="social" value="none"> I'm more than enough entertianment
+ </p>
+ 
+ <p>
+ Minimum activity amount: <input type="number" name="bags" min="1" max="10">
+ </p>
+
+ <p class=bodyPadding>
+Budget:<br>
+ <input type="checkbox" name="extras[]" value="giftwrap">(100$-300$)<br>
+ <input type="checkbox" name="extras[]" value="catalog" checked> (400$-800$) <br>
+ <input type="checkbox" name="extras[]" value="catalog" checked> (1000$-1500$) <br>
+ <input type="checkbox" name="extras[]" value="catalog" checked> (1600$-2000+$)
+ </p>
+  
+<p class=bodyPadding>Send to:<br>
+
+Name: <input type = "text" name = "name"> <br>
+
+Email: <input type = "text" name = "address"> <br>
+
+Phone: <input type = "tel" name = "phone"> <br>
+
+</p>
+
+<p class=bodyPadding>Customer Comments:<br>
+ <textarea name="comments"></textarea>
+ </p>
+	
+<p class=bodyPadding>
+  
+  <input type = "submit" value = "Submit"> <br>
+  
+</p>
+
+</form>
+</body>
+</html>

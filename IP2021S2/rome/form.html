@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tour information</title>
+	<link type="text/css" rel="stylesheet" href='style.css'>
+</head>
+<body>
+  <!-- This page will show tour information as well as contact information-->
+	<img src="assets/banner_1.jpg">
+	<div class="topnav">
+		<a href="index.html">Home</a>
+		<a href="list.html">Best places to go and stay</a>
+		<a href="gallery.html">Rome's famous landmarks</a>
+		<a href="table.html">Tour pricing and reviews</a>
+		<a href="form.html" class="active">Tour Help</a>
+	</div>
+
+	<div style="padding-left:16px">
+		<h1>Tour and contact information</h1>
+		<p>Don't want to set up your tours, let us help!</p>
+	</div>
+<form action="thankyou.html" method="Get">
+      <p class="other">
+        Choose your tour:
+       <select name="tour">
+         <option value="Arena Floor Tour">Arena Floor Tour</option>
+         <option value="Colosseum Guided Tour">Colosseum Guided Tour</option>
+         <option value="Colosseum With Underground Tour">Colosseum With Underground Tour</option>
+         <option value="Colosseum Night Tour">Colosseum Night Tour</option>
+        <option value="Colosseum Private Tour">Colosseum Private Tour</option>
+         <option value="Vatican Museum & Colosseum Tour">Vatican Museum & Colosseum Tour</option>
+       </select>
+      </p>
+      <p class="other">Time of day: <br>
+      <input type="radio" name="timeofday" value="morning" checked="true" >Morning tour<br>
+      <input type="radio" name="timeofday" value="day">Day tour <br>
+      <input type="radio" name="timeofday" value="night">Night Tour<br>
+      <input type="radio" name="timeofday" value="all day">All day tour<br>
+      </p>
+      <p class="other">
+        Number of people coming on the tour:
+        <input type="number" name="people" min="1" max="10">
+      </p>
+      <p class="other">
+        Day of tour:
+        <input type="date" name="date">
+      </p>
+      <p class="other">Contact information: <br>
+      Name: <input type="text" name="name"> <br>
+      Address:<input type="text" name="address"> <br>
+      City: <input type="text" name="city"> <br>
+      State:<input type="text" name="state"> <br>
+      Zip: <input type="text" name="zip"> <br>
+      Phone:<input type="tel" name="phone"> <br>
+      </p>
+      <p class="other">
+        Customer comments: <br>
+        <textarea name="comments"></textarea>
+      </p>
+      <p class="other">
+        <input type="submit" value="Order Now"> <br>
+      </p>
+    </form>
+</body>
+</html>
+
+

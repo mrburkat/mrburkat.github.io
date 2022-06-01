@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Book a Stay</title>
+		 <link type= "text/css" rel="stylesheet" href= "style.css">
+	</head>
+	<body>
+	  <img src="assets/ParisFrance.jpg">
+	  <!--This is how to book the hotel-->
+		<p><!-- Create a Menu -->
+	  	<a href=index.html>Home page</a> |
+			<a href=list.html>Bucket List</a> |
+			<a href=gallery.html>Photo Gallery</a> |
+			<a href=table.html>Temps/Review</a> |
+			<a href=form.html>Book a stay </a>
+		</p>
+	
+	
+		
+		<h1> Book a stay?</h1>
+    
+    <form action="thankyou.html">
+          
+		<p>
+	<div>
+	<div class="tableRow">
+		<p> Name: </p>
+		<p>
+            <input type="text" name="name" value="">
+		</div>
+
+
+	<div class="tableRow">
+		<p class="heading">Credit Card Information</p>
+		
+          <input type="number" value="" placeholder="Social Security">
+          <input type="number"  value="" placeholder="Pin Number">
+          <input type="number"  value="" placeholder=expired date>
+          <input type="number"  value="" placeholder= "Type">
+          
+		<p>
+	</div>
+	<div class="tableRow">
+		<p> Number of days: </p>
+		<p> <input type="number" name="days" min="1" max="30"> </p>
+	</div>
+	<div class="tableRow label">
+		<p> Duration: </p>
+		<input type="date" id="start" name="trip-start"
+       value=""
+       min="1" max="30">
+	</div>
+	</div>
+	<div class="tableRow">
+		<p class="heading"> Hotel Selection </p>
+		 
+		 <select name ="Hotels">
+		   
+		 <option value="Maison Souquet">Maison Souquet</option>
+		 <option value="Hotel Splendide Royal Paris">Hotel Splendide Royal Paris</option>
+		 <option value="Hotel L'Echiquier Opera Paris">Hotel L'Echiquier Opera Paris</option>
+		 <option value= "Hotel de Crillon, A Rosewood Hotel">Hotel de Crillon, A Rosewood Hotel</option>
+		 <option value= "Ritz Paris"> Ritz Paris</option>
+		 <option value="Hyatt Paris Madeleine">Hyatt Paris Madeleine</option>
+		 
+	 </select>
+		
+		
+		</div>
+	<div class="tableRow">
+	</div>
+	<div class="tableRow">
+		<p> Address: </p>
+		<p> <input type="text" name="address" value="" placeholder="Banzai Institute" required> </p>
+	</div>
+	<div class="tableRow">
+		<p> City: </p>
+		<p> <input type="text" name="city" value="" placeholder="Los Angeles" required> </p>
+	</div>
+	<div class="tableRow">
+		<p> State: </p>
+		<p> <input type="text" name="state" value="" placeholder="CA" required> </p>
+	</div>
+	<div class="tableRow">
+		<p> Zip: </p>
+		<p> <input type="text" name="zip" value="" placeholder="90050" required> </p>
+	</div>
+	<div class="tableRow">
+		<p> Phone: </p>
+		<p> <input type="tel" name="phone" value="" placeholder="310-555-1212" required> </p>
+	</div>
+	<div class="tableRow">
+		<p> Customer Comments: </p>
+		<p>
+            <textarea name="comments"></textarea>
+		</p>
+	</div>
+	<div class="tableRow">
+		<p></p>
+		<p> <input type="submit" value="Enjoy your stay"></p>
+	</div>
+	
+	
+</form>
+		
+	 
+	 
+	 
+	 
+	 
+	 
+	</body>
+</html>

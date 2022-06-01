@@ -1,0 +1,55 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contact Us</title>
+<link type="text/css" rel= "stylesheet" href ="style.css">
+</head>
+<body>
+  
+    <img src="Assets/banner2.jpg" width="1200" height="150">
+		<div class="topnav">
+		<a href="index.html" >Home</a>
+		<a href="list.html">Attractions</a>
+		<a href="table.html">Explore</a>
+		<a href="gallery.html">Info</a>
+		<a href="form.html" class="active">Contact Us</a>
+	</div>
+
+	<div style="padding-left:16px">
+		<h2>Intrested in visiting Costa Rica?</h2>
+		<p>Fill out the form below!</p>
+	</div>
+<form action="thankyou.html" method="GET">
+    <p>
+  Choose your Destination:
+  <select name="beans">
+  <option value="House Blend">Beach</option>
+  <option value="Bolivia">WaterFall</option>
+  <option value="Guatemala">Hotel</option>
+  </select>
+  </p>
+  <p>
+  Number of People: <input type="number" name="people" min="1" max="10">
+  </p>
+  <p>
+  Must arrive by date: <input type="date" name="date">
+  </p>
+  <p>
+  
+  Name: <input type="text" name="name"> <br>
+  Address: <input type="text" name="address"> <br>
+  City: <input type="text" name="city"> <br>
+  State: <input type="text" name="state"> <br>
+  Zip: <input type="text" name="zip"> <br>
+  Phone: <input type="tel" name="phone"> <br>
+  </p>
+  <p>Any Comments?: <br>
+  <textarea name="comments"></textarea>
+  </p>
+  <p>
+  <input type="submit" value="Submit"> <br>
+  </p>
+</form>
+<!-- look back at the website design plan-->
+</body>
+</html>

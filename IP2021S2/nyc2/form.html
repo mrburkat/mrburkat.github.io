@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>New York</title>
+	<link type="text/css" rel="stylesheet" href="style.css">
+</head>
+<body>
+  <img src="assets/banner1.jpg">
+  <!--Will have a name, adress, email, Phone number, visitation date, and hotel section to fill out. It will also include a larger box for comments and questions-->
+	<div class="topnav">
+		<a href="index.html">Home</a>
+		<a href="list.html">Activities</a>
+		<a href="table.html">Prices</a>
+		<a href="gallery.html">Take a Look</a>
+		<a href="form.html" class="active">Book a Trip</a>
+	</div>
+
+	<div>
+		<h1>Book a Trip</h1>
+		
+		<p>Now that you have learned a little bit more about New York and all it has to offer it is time to book your trip. Use the form below to help you plan your visit. Happy travels!</p><br>
+		  
+		<form action="thankyou.html" method="GET">
+		  
+    <div>
+		  <p>Chose your hotel:
+        <select name="hotel">
+          <option value="Pestana Park Avenue">Pestana Park Avenue</option>
+          <option value="Crosby Street Hotel">Crosby Street Hotel</option>
+          <option value="Martinique New York on Broadway">Martinique New York on Broadway</option>
+          <option value="Oprea House Hotel">Opera House Hotel</option>
+          <option value="Orchard Street Hotel">Orchard Street Hotel</option>
+        </select>
+		  </p>
+		</div>
+		<br>
+		 
+		 <p>Contact Information</p>
+		 
+		<div class="tablerow">
+		<p>
+		  Name:<input type="text" name ="name"> <br>
+		  Address:<input type="text" name ="address"> <br>
+		  Email:<input type="text" name ="email"> <br>
+		  Phone Number:<input type="tel" name ="phone">
+		</p>
+		</div>
+		
+		<br>
+		  
+		<div class="tablerow">
+		  <p>
+		    Arrival date: <input type="date" name="date"> <br>
+		    Departure date: <input type="date" name="date">
+		  </p>
+		</div>
+		<br>
+		
+		<div>
+		  <p>
+        Activities: <br>
+        <input type="checkbox" name="activities[]" value="museums">Museums<br>
+        <input type="checkbox" name="activities[]" value="shows">Shows<br>
+        <input type="checkbox" name="activities[]" value="landmarks">Landmarks
+      </p>
+    </div>
+    <br>
+		
+		<div>
+		  <p>
+		    Comments: <br>
+		    <textarea name="comments"></textarea>
+		  </p>
+		</div>
+		<br>
+		
+		<div>
+		  <p>
+        <input type="submit" value="Submit">
+      </p>
+    </div>
+		</form>
+		  
+	</div>
+</body>
+</html>
+
+

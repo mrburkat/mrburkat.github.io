@@ -1,0 +1,105 @@
+body {
+			margin: 0;
+			font-family: Arial, Helvetica, sans-serif;
+			background-color:#D2E7D2;
+			color: #1D5171;
+			font-size: 100%;
+		}
+
+		.topnav {
+			overflow: hidden;
+			background-color: #8FBFD1;
+		}
+
+		.topnav a {
+			float: left;
+			color: #f2f2f2;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-size: 17px;
+			width: 17%; /* Five links of equal widths */
+		}
+
+		.topnav a:hover {
+			background-color: #dddddd;
+			color: black;
+		}
+
+		.topnav a.active {
+			background-color: #D9D1C2;
+			color: white;
+		}
+		
+		h2 {
+		  font-size: 230%;
+		}
+		
+		p {
+		  font-size:125% ;
+		}
+		
+		ul {
+		  font-size: 120%;
+		}
+		
+		table {
+  margin-left: 20px;
+  margin-right: 20px;
+  border: thin solid black;
+  caption-side: bottom;
+  border-collapse: collapse;
+}
+
+td, th {
+  border: thin dotted gray;
+  padding: 5px;
+}
+
+caption {
+  font-style: italic;
+  padding-top: 8px;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+th {
+  background-color: #8FBFD1;
+}
+
+.cellcolor {
+  background-color: #D9D1C2;
+}
+
+li {
+  list-style-type:square;
+}
+
+li {
+  list-style-type: "\1F44D";
+}
+
+li {
+  list-style-type: url(images/backpack.gif);
+  padding-top: 5px;
+  margin-left: 20px;
+}
+
+form {
+  display: table;
+  padding: 10px;
+  border: thin dotted white;
+  background-color: #D9D1C2;
+  margin: 20px;
+}
+
+form textarea {
+  width: 500px;
+  height: 50px;
+}

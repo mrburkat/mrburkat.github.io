@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Hotel Form</title>
+	
+	<link type="text/css" rel="stylesheet" href="style.css">
+	
+</head>
+<!--This form.html page displays a form for you to put in your information and needs to see which hotel is best-->
+<body>
+  	<img src="assets/banner1.jpg" width=1300>
+	<div class="topnav">
+		<a href="index.html" class="active">Home</a>
+		<a href="list.html">Activities</a>
+		<a href="gallery.html">Photo Gallery</a>
+		<a href="table.html">Weather</a>
+		<a href="form.html">Hotel Sign Up</a>
+	</div>
+
+	<div style="padding-left:16px">
+		<h1>Hotel Sign Up!</h1>
+	</div>
+	<table>
+      <tr class="cellcolor">
+        <th>Hotel</th>
+        <th>Location</th>
+        <th>Price</th>
+        <th>Ammenities</th>
+        <th>Star Rating</th>
+      </tr>
+      <tr>
+        <td>Santorini Kastelli Resort</td>
+        <td>Kamari</td>
+        <td>200$-325$</td>
+        <td>Beach access, Pool, Spa, Free Wifi</td>
+        <td>5-Star</td>
+      </tr>
+      <tr class="cellcolor">
+        <td>Grand View Hotel</td>
+        <td>Megalochori</td>
+        <td>500$-600$</td>
+        <td>Pool, Free parking, Free Breakfest, Free Wifi</td>
+        <td>3-Star</td>
+      </tr>
+      <tr>
+        <td>Andromeda Villas</td>
+        <td>Imerovigli</td>
+        <td>200$-250$</td>
+        <td>Pool, Spa, Hot tub, Free Wifi</td>
+        <td>4-Star</td>
+      </tr>
+      <tr class="cellcolor">
+        <td>Villa Manos</td>
+        <td>Karterádos</td>
+        <td>90$-130$</td>
+        <td>Pool, Free Wifi, Air conditioning, Parking</td>
+        <td>4-Star</td>
+       
+      </tr>
+    </table>
+    
+<form action="thankyou.html" method="GET">
+   Choose your Hotel:
+      <p>
+        <select name="hotel">
+          <option value="Santorini Kastelli Resort">Santorini Kastelli Resort</option>
+          <option value="Grand View Hotel	">Grand View Hotel</option>
+          <option value="Andromeda Villas	">Andromeda Villas</option>
+          <option value="Villa Manos">Villa Manos	</option>
+          </select>
+          </p>
+           
+        <p>
+          Must arrive by date: <input type="date" name="date">
+        </p>
+        <p>
+          Must depart by date: <input type="date" name="date">
+        </p>
+              <p>
+      <p>
+        Amount of Guests:
+        <select name="number">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="1">5</option>
+          <option value="2">6</option>
+          <option value="3">7</option>
+          <option value="4">8</option>
+          <option value="1">9</option>
+          <option value="2">10</option>
+          <option value="3">11</option>
+          <option value="4">12</option>
+          <option value="1">13</option>
+          <option value="2">14</option>
+          <option value="3">15</option>
+          <option value="4">16</option>
+          <option value="1">17</option>
+          <option value="2">18</option>
+          <option value="3">19</option>
+          <option value="4">20</option>
+          </select>
+           </p>
+           
+            <p>Information: <br>
+          Name: <input type="text" name="name"> <br>
+          Address: <input type="text" name="address"> <br>
+          City: <input type="text" name="city"> <br>
+          State: <input type="text" name="state"> <br>
+          Zip: <input type="text" name="zip"> <br>
+          Phone: <input type="tel" name="phone"> <br>
+          Email: <input type="text" name="email"> <br>
+      </p>
+      
+          <p> Card Information: <br>
+          Card Number: <input type="tel" name="card number"><br>
+      </p>
+      <p>
+          Experation date: <input type="date" name="date">
+        </p>
+        
+        <p> CCV: <br>
+          Card Number: <input type="tel" name="CCV"><br>
+      </p>
+      
+        <p>Customer Comments:<br>
+            <textarea name="comments"></textarea>
+        </p>
+        <p>
+          <input type="submit" value="Book Now">
+    </form>
+
+</body>
+</html>
+
+

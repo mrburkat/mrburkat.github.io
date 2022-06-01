@@ -1,0 +1,98 @@
+		body {
+			margin: 0;
+			font-family: Arial, Helvetica, sans-serif;
+			background-color:#E5DBB7;
+			color: #FACD1E;
+			font-size: 115%;
+		}
+
+		.topnav {
+			overflow: hidden;
+			background-color: #D32929;
+		}
+
+		.topnav a {
+			float: left;
+			color: #FACD1E;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-size: 105%;
+			width: 17%; /* Five links of equal widths */
+		}
+
+		.topnav a:hover {
+			background-color: #D32929;
+			color: black;
+		}
+
+		.topnav a.active {
+			background-color: #7F2122;
+			color: #FACD1E;
+		}
+		p {
+		  color:#D32929;
+		  font-size:1.2em;
+		}
+		ul {
+		  color:#D32929;
+		}
+		h1 {
+		  font-size:225%;
+		}
+		h2 {
+		  font-size: 200%;
+		  	}
+	table {
+    margin-left: 20px;
+    margin-right: 20px;
+    border: thin solid black;
+    caption-side: bottom;
+    border-collapse: collapse;
+}
+td, th {
+  border: thin dotted gray;
+  padding: 5px;
+  color:#FFFFFF
+}
+caption {
+  font-style: italic;
+  padding-top: 8px;
+}
+
+.center {
+  text-align: center;
+}
+
+th { background-color: #7F2122;
+color:#FACD1E; }
+
+.cellcolor { background-color: #D32929;}
+
+
+.ital {
+  font-style: italic;
+  color:#FFFFFF;
+}
+
+.right {
+  text-align: right;
+}
+.cellcolor2 {background-color: #FACD1E;}
+form {
+  padding: 10px;
+  border: thin dotted #7e7e7e;
+  background-color:#D32929;
+  margin: 20px;
+}
+form textarea {
+  width: 500px;
+  height: 50px;
+}
+
+.other {
+  color:#FACD1E;
+}
+.centerital {
+  color:#7F2122;
+}

@@ -1,0 +1,61 @@
+	body {
+			margin: 0;
+			font-family: 'Bebas Neue';
+			background-color:#F8EBDA;
+			color: #1A8785;
+		}
+
+	
+		.topnav {
+			overflow: hidden;
+			background-color: #79D8E1;
+		}
+
+		.topnav a {
+			float: left;
+			color: #f2f2f2;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-size: 17px;
+			width: 17%; /* Five links of equal widths */
+		}
+
+		.topnav a.active {
+			background-color: #79D8E1;
+			color: #f2f2f2;
+		}
+		
+.listheader {
+  text-decoration: underline;
+}
+		
+table {
+  background-color: #79D8E1;
+  color: black;
+  margin-left: 20px;
+  margin-right: 20px;
+  border: thin solid black;
+  caption-side: bottom;
+  border-collapse: collapse;
+  border-spacing: 10px, 30px;
+}
+caption {
+  color: #1A8785;
+}
+td {
+  text-align: center;
+}
+.cellcolor {
+  background-color: #e8f4f8;
+}
+form {
+  font-size: 20px;
+}
+.p {
+  font-size: 20px;
+}
+
+.topnav a:hover {
+			background-color: #1A8785
+		}

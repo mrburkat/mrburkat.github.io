@@ -1,0 +1,69 @@
+
+		body {
+			margin: 0;
+			font-family: Palatino;
+			background-color:#FFE5CA;
+			color: #3357FF;
+		}
+
+		.topnav {
+			overflow: hidden;
+			background-color: #B9D5EC;
+		}
+
+		.topnav a {
+			float: left;
+			color: #3357FF;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-size: 17px;
+			width: 17%; /* Five links of equal widths */
+		}
+
+		.topnav a:hover {
+			background-color: #3357FF;
+			color: white;
+		}
+
+		.topnav .active {
+			float: left;
+			color: #3357FF;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-size: 17px;
+			width: 17%; /* Five links of equal widths */
+		}
+td, th {
+  border: thin dotted gray;
+  padding: 5px;
+}
+table {
+  margin-left:20px;
+  margin-right:20px;
+  border: thin solid white;
+  caption-side: bottom;
+  border-collapse: collapse;
+}
+
+caption {
+  font-style: italic;
+  padding-top: 8px;
+}
+
+th {
+  background-color: #B9D5EC;
+}
+.cellcolor {
+  background-color: #FFFFFF;
+}
+form {
+  padding: 10px;
+  border: thin dotted #FFFFFF;
+  margin: 20px;
+}
+form textarea {
+  width: 500px;
+  height:50px;
+}

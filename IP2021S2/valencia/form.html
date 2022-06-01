@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Valencia, Spain</title>
+	<link type="text/css" rel="stylesheet" href="style.css">
+	<style>
+	
+
+	</style>
+</head>
+
+<!-- this page is going to be a form collecting info of the person if they want updates and new things to do. the form will ask question like if the have kids and their ages and what things everyone likes to do so it can suggest activities and places to go in their liking -->
+<body>
+  
+<img src="assets/banner6.jpg" width=1474 height=500>
+  
+  
+  <div class="topnav">
+		<a href="index.html" class="active">Home</a>
+		<a href="list.html">Activities / things to do</a>
+		<a href="gallery.html">Pictures!</a>
+		<a href="table.html">Weather</a>
+		<a href="form.html">More Info</a>
+	</div>
+
+	<div style="padding-left:16px">
+		<h1>Ready to book your hotel?!</h1>
+		<p class="p">Fill out this form to find the best activities and hotels for you!.</p>
+	</div>
+	
+	 <form action="thankyou.html">
+      <p>Contact information: <br>
+      Name: <input type="text" name="name"> <br>
+      Email: <input type="text" name="email"> <br>
+      Phone: <input type="tel" name="phone"> <br>
+      </p>
+      
+      <p>Book your hotel: <br>
+        Where are you:
+        <select name="Donde Estas?">
+          <option value="Andalusia">Andalusia</option>
+          <option value="Aragon">Aragon</option>
+          <option value="Asturias">Asturias</option>
+          <option value="Balearic Islands">Balearic Islands</option>
+          <option value="Canary Islands">Canary Islands</option>
+          <option value="Cantabria">Cantabria</option>
+          <option value="Castile–La Mancha">Castile–La Mancha</option>
+          <option value="Castile–León">Castile–León</option>
+          <option value="Catalonia">Catalonia</option>
+          <option value="Extremadura">Extremadura</option>
+          <option value="Galicia">Galicia</option>
+          <option value="Madrid">Madrid</option>
+          <option value="Melilla">Melilla</option>
+          <option value="Murcia">Murcia</option>
+          <option value="Navarra">Navarra</option>
+          <option value="La Rioja">La Rioja</option>
+          <option value="La Valencia">La Valencia</option>
+        </select> <br>
+      Arrival date: <input type="date" name="arrivaldate"> <br>
+      Leaving Date: <input type="date" name="leavingdate"> <br>
+      How many people?: <input type="number" name="people" min="1" max="10"><br>
+      How many Beds?: <input type="number" name="people" min="1" max="2"><br>
+        <input type="radio" name="type" value="whole"> Children <br>
+        <input type="radio" name="type" value="ground"> No Children<br>
+       Interested in there being a pool?<br>
+        <input type="radio" name="pooltype" value="whole"> Pool <br>
+        <input type="radio" name="pooltype" value="ground"> No pool
+        <br>
+          Number of stars: <input type="number" name="bags" min="1" max="5">
+      </p>
+      
+      <p>Instrests: <br>
+        <input type="checkbox" name="extras[]" value="Muesuem">Muesuem<br>
+        <input type="checkbox" name="extras[]" value="Beach">Beach<br>
+        <input type="checkbox" name="extras[]" value="Wateractivities">Water Activities<br>
+        <input type="checkbox" name="extras[]" value="Restaurant">Restaurant<br>
+        <input type="checkbox" name="extras[]" value="Spaday">Spa Day<br>
+      </p>
+    
+
+      <p>Customer Comments:<br>
+      <textarea name="comments"></textarea>
+      </p>
+      
+      <p>
+        <input type="submit" value="Submit">
+      </p>
+      
+      
+    </form>
+	
+	
+	
+
+</body>
+</html>
+
+

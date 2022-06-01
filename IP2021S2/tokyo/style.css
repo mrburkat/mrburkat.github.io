@@ -1,0 +1,147 @@
+	body {
+			margin: 0;
+			font-family: Verdana, 'Open Sans', Helvetica, Georgia;
+			background-color:#fae9d5;
+			color: #000000;
+			font-size: 16px;
+		}
+	
+  h1 {
+      font-size: 200%;
+      font-family: Helvetica;
+  }
+	
+	h2 {
+	  font-size: 150%;
+	  font-family: Helvetica;
+	}
+	
+	h3 {
+	  font-size: 125%;
+	  font-family: Helvetica;
+	}
+	
+  .topnav {
+			overflow: hidden;
+			background-color: #ffffff;
+			
+		}
+
+	.topnav a {
+			float: left;
+			color: #000000;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-size: 17px;
+			width: 17%; /* Five links of equal widths */
+		}
+
+	.topnav a:hover {
+			background-color: #dddddd;
+			color: black;
+		}
+
+	.topnav a.active {
+			background-color: #ffb7c5;
+			color: white;
+		}
+		  {
+      box-sizing: border-box;
+    }
+    
+    
+
+  
+  
+  
+  table {
+    margin-left: 20px;
+    margin-right: 120px;
+    margin-bottom: 50px;
+    border: thin solid black;
+    caption-side: bottom;
+    border-collapse;
+    float: right;
+    }
+  
+  th {
+    border: thin dotted gray;
+    padding: 5px;
+  }
+  td {
+    border: thin dotted gray;
+    padding: 10px;
+  }
+    
+  .center {
+    text-align: center;
+  }
+  
+  th {background-color: #ffb7c5;}
+  
+  .cellcolor {background-color: #ffffff; }
+  
+  .cellcolor2 {background-color: #ffb7c5; }
+  
+  .right {
+    text-align: right;
+    margin-right: 150px;
+    font-size: 16px;
+    }
+  
+  caption {
+    font-style: italic;
+    padding-top: 8px;
+  }
+    
+  /* 6e4054
+  789fff */
+  
+  
+  form {
+    display: table;
+    padding: 10px;
+    border: thin dotted #7e7e7e;
+    background-color: #e1d2c0;
+    margin: 20px;
+  }
+  
+  form textarea {
+    width: 750px;
+    height: 100px;
+  }
+  
+  
+  div.tablerow {
+    display: table-row;
+  }
+  div.tablerow p {
+    display: table-cell;
+    vertical-align: top;
+    padding: 3px;
+  }
+  div.tablerow p:first-child {
+    text-align: right;
+  }
+  p.heading {
+    font-weight: bold;
+  }
+  
+  
+  
+  iframe {
+    margin-right: 300px;
+  }
+
+
+  .biggerfont {
+    font-size: 20px;
+  }
+  
+  
+  .imageformat {
+    margin: 25px;
+    max-width: 89%;
+    height: auto;
+  }

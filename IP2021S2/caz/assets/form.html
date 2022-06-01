@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Personalized Experience & Merchandise</title>
+
+<link type="text/css" rel="stylesheet" href="style.css">
+
+</head>
+<body>
+   
+  <img src="banner1.jpg">
+  
+	<div class="topnav">
+		<a href="index.html">Home</a>
+		<a href="list.html">Things to do</a>
+		<a href="table.html">Helpful Information</a>
+		<a href="gallery.html">Gallery</a>
+		<a href="form.html" class=active>Personalized Experience & Merchandise</a>
+	</div>
+
+	<div style="padding-left:16px">
+		<h1>Your Personalized Cazenovia Experience</h1>
+	</div>
+
+<div style="padding-left:16px">
+  <form class="clarewhite" action="thankyou.html">
+      
+      <p>
+        Arrival Date: <input type="date" name="date">
+      </p>
+      
+      <p>
+      Departure Date: <input type="date" name="date">
+      </p>
+      
+      <p>
+        Which activities will you be attending:
+          <br>
+        <input type="checkbox" name="extras[]" value="5k">4th of July 5k
+          <br>
+        <input type="checkbox" name="extras[]" value="fireworks">4th of July firework show
+          <br>
+        <input type="checkbox" name="extras[]" value="bookfair">August Book Fair
+          <br>
+        <input type="checkbox" name="extras[]" value="play">Annual Children's Play
+          <br>
+          <input type="checkbox" name="extras[]" value="concer">Weekly Concerts @ Lakeland Park
+          <br>
+      </p>
+      
+      <p>Leave comments about your visit here! <br>
+        <textarea name="comments"></textarea>
+      </p>
+      
+      <p>
+        <input type="submit" name="Order Now">
+      </p>
+   
+    </form>
+    
+    <br>
+    
+    <h1>Purchase Cazenovia Merchandise Here!</h1>
+
+    
+  <form class="clarewhite" action="orderconfirm.html">
+      <P>
+        Choose your article of clothing:
+        <select name="select">
+          <option value="short T-Shirt">Short Sleeve T-Shirt</option>
+          <option value="long T-Shirt">Long Sleeve T-Shirt</option>
+          <option value="Crewneck">Crewneck</option>
+          <option value="Hoodie">Hoodie</option>
+        </select>
+      </P>
+      
+      <p> Color: <br>
+        <input type="radio" name="color" value="black">Black<br>
+        <input type="radio" name="color" value="white">White<br>
+        <input type="radio" name="color" value="yellow">Yellow<br>
+        <input type="radio" name="color" value="orange">Orange<br>
+        <input type="radio" name="color" value="light">Light blue<br>
+        <input type="radio" name="color" value="dark">Dark blue<br>
+
+
+      </p>
+      
+      <p>
+        Number of items: <input type="number" name="bags" min="1" max="10">
+      </p>
+      
+      <p> Ship to: <br>
+        Name: <input type="text" name="name"><br>
+        Address: <input type="text" name="address"><br>
+        City: <input type="text" name="city"><br>
+        State: <input type="text" name="state"><br>
+        Zip: <input type="text" name="zip"><br>
+        Phone: <input type="text" name="phone"><br>
+      </p>
+      
+      <p>
+        <input type="submit" name="Order Now">
+      </p>
+      
+    </form>
+</div>
+
+</body>
+</html>

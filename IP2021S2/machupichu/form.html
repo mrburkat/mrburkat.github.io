@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Donate</title>
+	<link rel="stylesheet" href="mywebsite.css">
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+<body>
+  <a href="index.html"><center><img src="assets/banner1.jpg" height="125"></center></a>
+	<div class="topnav">
+		<a href="index.html">Home</a>
+  		<a href="list.html">About</a>
+		<a href="table.html">Travel Tips</a>
+		<a href="gallery.html">Gallery</a>
+		<a href="form.html" class="active">Donate</a>
+	</div>
+
+	<div style="padding-left:16px">
+		<h2>Help us!</h2>
+		<h4>Machu Picchu has been hit incredibly by the Covid-19 pandemic, as seen below by our tourism statistics...</h4>
+	</div>
+	<div id ="myChart" style="width:70%;height:450px;"></div>
+    <script src="linegraph.js"></script>
+    
+    <h2 style="text-indent:10px;">To aid us, consider donating!</h2>
+    
+    
+  <form action="thankyou.html" id="myForm">
+    
+    <h3> 1. Choose your Donation Amount </h3>
+    <div class="tableRow">
+      <p class="heading"> Amount: </p>
+      <p>
+        <input type="radio" name="amount" value="fifty"> $50 <br>
+        <input type="radio" name="amount" value="hundred"> $100 <br>
+        <input type="radio" name="amount" value="fivehundred"> $500 <br>
+        <input type="radio" name="amount" value="band"> $1,000 <br>
+        <input type="radio" name="amount" value="fivestacks"> $5,000 <br>
+      <div class='tableRow'>
+        <p> Other: </p>
+        <p> $<input type="text" name="other" value="" placeholder="00000"> </p>
+       </div>
+    </div>
+
+    <h3> 2. Enter your Billing Information </h3>
+    <div class="tableRow">
+  		<p class="heading"> Info: </p>
+  		<p></p>
+  	</div>
+  
+    <div class="tableRow">
+      <p> Email: </p>
+      <p> <input type="email" name="email" value="" placeholder="llama@pvipanther.net"> </p>
+    </div>
+    
+    <div class="tableRow">
+      <p>
+        Title:
+      </p>
+      <p>
+        <select name="title">
+            
+          <option value="mr">Mr.</option>
+          
+          <option value="mrs">Mrs.</option>
+          
+          <option value="miss">Miss</option>
+          
+          <option value="dr">Dr.</option>
+              
+        </select>
+      </p>
+    </div>
+    
+    <div class="tableRow">
+      <p> Name: </p>
+      <p> <input type="text" name="name" value="" placeholder="John Smith"> </p>
+    </div>
+      
+    <div class="tableRow">
+      <p> Address: </p>
+      <p> <input type="text" name="address" value="" placeholder="1234 Example Street"> </p>
+    </div>
+      
+    <div class="tableRow">
+      <p> City: </p>
+      <p> <input type="text" name="city" value="" placeholder="Example Town"> </p>
+    </div>
+    <div class="tableRow">
+      <p>
+        State:
+      </p>
+      <p>
+        <select name="state">
+        	<option value="AL">Alabama</option>
+        	<option value="AK">Alaska</option>
+        	<option value="AZ">Arizona</option>
+        	<option value="AR">Arkansas</option>
+        	<option value="CA">California</option>
+        	<option value="CO">Colorado</option>
+        	<option value="CT">Connecticut</option>
+        	<option value="DE">Delaware</option>
+        	<option value="DC">District of Columbia</option>
+        	<option value="FL">Florida</option>
+        	<option value="GA">Georgia</option>
+        	<option value="HI">Hawaii</option>
+        	<option value="ID">Idaho</option>
+        	<option value="IL">Illinois</option>
+        	<option value="IN">Indiana</option>
+        	<option value="IA">Iowa</option>
+        	<option value="KS">Kansas</option>
+        	<option value="KY">Kentucky</option>
+        	<option value="LA">Louisiana</option>
+        	<option value="ME">Maine</option>
+        	<option value="MD">Maryland</option>
+        	<option value="MA">Massachusetts</option>
+        	<option value="MI">Michigan</option>
+        	<option value="MN">Minnesota</option>
+        	<option value="MS">Mississippi</option>
+        	<option value="MO">Missouri</option>
+        	<option value="MT">Montana</option>
+        	<option value="NE">Nebraska</option>
+        	<option value="NV">Nevada</option>
+        	<option value="NH">New Hampshire</option>
+        	<option value="NJ">New Jersey</option>
+        	<option value="NM">New Mexico</option>
+        	<option value="NY">New York</option>
+        	<option value="NC">North Carolina</option>
+        	<option value="ND">North Dakota</option>
+        	<option value="OH">Ohio</option>
+        	<option value="OK">Oklahoma</option>
+        	<option value="OR">Oregon</option>
+        	<option value="PA">Pennsylvania</option>
+        	<option value="RI">Rhode Island</option>
+        	<option value="SC">South Carolina</option>
+        	<option value="SD">South Dakota</option>
+        	<option value="TN">Tennessee</option>
+        	<option value="TX">Texas</option>
+        	<option value="UT">Utah</option>
+        	<option value="VT">Vermont</option>
+        	<option value="VA">Virginia</option>
+        	<option value="WA">Washington</option>
+        	<option value="WV">West Virginia</option>
+        	<option value="WI">Wisconsin</option>
+        	<option value="WY">Wyoming</option>
+        </select>
+      </p>
+    </div>
+    
+    <div class="tableRow">
+      <p> Zip: </p>
+      <p> <input type="text" name="zip" value="" placeholder="12345"> </p>
+    </div>
+      
+    <div class="tableRow">
+      <p> Phone: </p>
+      <p> <input type="tel" name="tel" value="" placeholder="1234567890"> </p>
+    </div>
+    
+    <h3> 3. Enter your Payment Information </h3>
+    
+    <div class="tableRow">
+      <p> Card Number: </p>
+      <p> <input type="text" name="card" value="" maxlength=19 placeholder="1234 4567 8900 0000"> </p>
+    </div>
+      
+    <div class="tableRow">
+      <p> CCV: </p>
+      <p> <input type="text" name="ccv" maxlength=4 value="" placeholder="1234"> </p>
+    </div>
+    
+    <div class="tableRow">
+      <p> Expiration Date: </p>
+      <p> <input type="date" name="date" value=""> </p>
+    </div>
+    
+    <h3> 4. Let Us Know How you Feel! :)</h3>
+    <div class="tableRow">
+    	<p> Comments: </p>
+    	<p>
+              <textarea name="comments">I just love llamas...</textarea>
+    	</p>
+    </div>
+    <div class="tableRow">
+  		<p></p>
+  		<p> <input type="submit" value="Submit Donation"> </p>
+  	</div>
+  	
+</form>
+</body>
+</html>
+
+

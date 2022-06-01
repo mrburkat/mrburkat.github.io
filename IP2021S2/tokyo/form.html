@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form page</title>
+	<link href='https://fonts.googleapis.com/css?family=Fredoka' rel='stylesheet'>
+  <link type="text/css" rel="stylesheet" href=style.css>
+</head>
+
+<body>
+  <center><img src="assets/banner3.jpg"></center>
+  <!-- This form.html page is for user feedback -->
+  
+	<div class="topnav">
+		<a href="index.html">Home</a>
+		<a href="list.html">About</a>
+		<a href="table.html">Info</a>
+		<a href="gallery.html">Photo Gallery</a>
+		<a href="form.html" class="active">Feedback</a>
+	</div>
+
+	<div style="padding-left:20px">
+		<h1>User Feedback</h1>
+		<p>Let us know what you thought about our website</p>
+	</div>
+	
+	<form action="thankyou.html">
+		
+	  <div class="tablerow">
+  	  <p> Name:</p>
+  	  <p><input type="text" name="fullname"> </p>
+  	</div>
+  	<div class="tablerow">
+  	  <p>Email Address:</p>
+  	  <p><input type="text" email="emailadress"> </p>
+  	 </div>
+  	 <br>
+  	  
+  	<div class="tablerow">
+  	  <p>Website Rating:</p>
+  	  <p>
+  	    <input type="radio" name="website rating" value="great"> Great <br>
+  	    <input type="radio" name="website rating" value="good"> Good <br>
+  	    <input type="radio" name="website rating" value="just ok"> Just ok<br>
+  	    <input type="radio" name="website rating" value="bad"> Bad <br>
+  	  </p>
+  	</div>
+  	<br>
+  	    
+  	<div class="tablerow">
+      <p>
+  	    Date of your trip:</p>
+  	  <p> <input type="date"> </p>
+  	</div>
+  	<br>
+  	  
+  	<div class="tablerow">
+      <p> Comments: </p>
+      <p> <textarea name="comments" rows="10" cols="48"></textarea> </p>
+  	</div>
+  	<br>
+  	
+  	<div class="tablerow">
+  	  <p></p>
+  	  <p>
+        <input type="submit" value="Submit">
+      </p>
+    </div>
+    
+	</form>
+	 
+</body>
+</html>
+
+

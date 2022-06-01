@@ -1,0 +1,62 @@
+@font-face {
+  font-family: "Emblema One"
+}
+body {
+  font-family: Merriweather;
+  background-color: purple;
+  color: lightblue;
+  font-size: medium
+}
+span {
+  display:inline-block;
+  width:200px;
+}
+.vertical-menu {
+  display:inline-block;
+  width:200px;
+  float:left;
+  margin-right:15px;
+  margin-bottom:200px;
+}
+.vertical-menu a {
+  background-color:#CBC3E3;
+  color:darkblue;
+  display:block;
+  padding:12px;
+  text-decoration:none;
+}
+.vertical-menu a:hover {
+  background-color:#CF9FFF
+}
+.vertical-menu a.active {
+  background-color:#FAFAFA;
+  color:darkblue;
+}
+h1, {
+  font-size: 100%;
+}
+h2 {
+  font-size: 155%;
+}
+table {
+  margin-left: 20px;
+  margin-right: 20px;
+  border: thin solid black;
+  border-collapse: collapse;
+  caption-side: bottom;
+}
+td, th {
+  border: thin dotted gray;
+  padding: 5px;
+}
+th {
+  background-color: white;
+  color: blue;
+}
+tr:nth-child(odd){
+      background-color: #CBC3E3;
+      color: blue;
+}
+.center {
+  text-align: center;
+}

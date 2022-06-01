@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tourism</title>
+	<link type="text/css" rel="stylesheet" href="style.css">
+	<style>
+		body {
+			margin: 0;
+			font-family: Arial, Helvetica, sans-serif;
+			background-color:#DCDCDC;
+			color: #000000;
+		}
+
+		.topnav {
+			overflow: hidden;
+			background-color: #777777;
+		}
+
+		.topnav a {
+			float: left;
+			color: #f2f2f2;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-size: 17px;
+			width: 17%; /* Five links of equal widths */
+		}
+
+		.topnav a:hover {
+			background-color: #dddddd;
+			color: black;
+		}
+
+		.topnav a.active {
+			background-color: #4CAF50;
+			color: white;
+		}
+	</style>
+
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+<body>
+    <!--This page is going to include what the weather looks like in Boston. The weather is typically really cold winters and I think the people who visit my website should know that. The temps can get low to around the 10s sometimes and I think the people should know that.-->
+	  <img src="assets/banner1.jpg">
+	
+	<div class="topnav">
+		<a href="index.html">Home</a>
+		<a href="sports.html">Sports</a>
+		<a href="gallery.html">Image Gallery</a>
+		<a href="tourism.html" class="active">Tourism</a>
+		<a href="form.html">Contact Us!</a>
+	</div>
+
+	<div style="padding-left:24px">
+		<h2>Typical Weather in Boston</h2>
+		<p>More coming soon</p>
+	</div>
+
+    <div id="myChart" style="width:100%; max-width:600px; height:500px;"></div>
+    <script src="linegraph.js"></script>
+
+  <table>
+    <caption>Famous Restaurants in Boston</caption>
+    <tr class="cellcolor">
+      <th>Restaurant</th>
+      <th>Hours</th>
+      <th>Take-Out</th>
+      <th>Delivery</th>
+      <th>Ratings</th>
+      <th>Menu</th>
+    </tr>
+      <tr>
+        <td>Union Oyster House</td>
+        <td>11AM-9PM</td>
+        <td><p>&#9989;</p></td>
+        <td><p>&#9989;</p></td>
+        <td>4.4/5&#11088;</td>
+        <td><a href="http://www.unionoysterhouse.com/pages/menus.html">Menu</a></td>
+      </tr>
+      <tr class="cellcolor">
+        <td>Warren Tavern</td>
+        <td>11AM-1AM</td>
+        <td><p>&#9989;</p></td>
+        <td><p>&#9989;</p></td>
+        <td>4.6/5&#11088;</td>
+        <td><a href="http://places.singleplatform.com/warren-tavern/menu?ref=google#menu_902058">Menu</a></td>
+      </tr>
+      <tr>
+        <td>Bostonia Public House</td>
+        <td>11AM-12AM</td>
+        <td><p>&#9989;</p></td>
+        <td><p>&#9989;</p></td>
+        <td>4.4/5&#11088;</td>
+        <td><a href="http://places.singleplatform.com/bostonia-public-house/menu?ref=google#menu_3964209">Menu</a></td>
+      </tr>
+      <tr class= "cellcolor">
+        <td>Parker's Restaurant</td>
+        <td>7AM-2PM</td>
+        <td><p>&#9989;</p></td>
+        <td><p>&#10060;</p></td>
+        <td>4.4/5&#11088;</td>
+        <td><a href="https://www.omnihotels.com/-/media/images/hotels/bospar/restaurants/menus/bospar-omni-parker-house-parkers-breakfast-menu.pdf?la=en">Menu</a></td>
+      </tr>
+      <tr>
+        <td>The Green Dragon Tavern</td>
+        <td>11AM-2AM</td>
+        <td><p>&#9989;</p></td>
+        <td><p>&#10060;</p></td>
+        <td>4.4/5&#11088;</td>
+        <td><a href="https://www.greendragonboston.com/lunch-dinner/">Menu</a></td>
+      </tr>
+      <tr class="cellcolor">
+        <td>James Hook & Co</td>
+        <td>10AM-4PM</td>
+        <td><p>&#9989;</p></td>
+        <td><p>&#9989;</p></td>
+        <td>4.5/5&#11088;</td>
+        <td><a href="http://places.singleplatform.com/james-hook--co/menu?ref=google#menu_3564534">Menu</a></td>
+      </tr>
+  </table>
+
+  
+</body>
+</html>
+
+

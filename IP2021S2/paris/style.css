@@ -1,0 +1,67 @@
+			
+		
+	
+	h1, h2 {
+	color:white;
+	font-size:200%;
+	}
+	
+	
+	
+	
+		body {
+				background-color:#FF3333;
+				color:white;
+      margin-left:10%;
+     margin-right:10%;
+    padding:15px 15px 15px 15px;
+   font-family:Roboto, Arial, Open  Sans;
+   font-size:115%;
+   text-align:left;
+   
+		}
+   
+		
+	
+	
+
+	
+	
+		
+		
+		p {
+		    color:white;
+		    font-family:Arial;
+		}
+		
+		em {
+		  font-family:Arial;
+		  font-size:200%;
+		}
+		
+	
+		
+			table{
+  margin-left:20px;
+  margin-right:20px;
+  border:thin solid black;
+  caption-side:bottom;
+  border-collapse:collapse;
+}
+	
+	.cellcolor{background-color:#33ccff;}
+	
+	
+	
+	form{
+	  padding:10px;
+	  border:thin dotted;
+	  background:red;
+	  margin:20px;
+	}
+	
+	
+	form textarea{
+	  width:500px;
+	  height:50px;
+	}

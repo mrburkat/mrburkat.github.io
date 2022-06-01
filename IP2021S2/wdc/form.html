@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Help</title>
+	<link type="text/css" rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" href="assets/WashingtonDC.jpg" type="image/x-icon">
+</head>
+<body>
+  <img src="assets/banner3(3).jpg"> <!--this is the banner-->
+	<div class="topnav">
+		<a href="home.html">Home</a>
+		<a href="infopage.html">Information Page</a>
+		<a href="records.html">Records</a>
+		<a href="gallery.html">DC Pictures</a>
+		<a href="form.html" class="active">Help</a>
+	</div>
+
+	<div style="padding-left:16px">
+	</div>
+	<h2>The DC Questionnaire</h2>
+    <h1>Fill out the form below and click "submit" to send it off to us!</h1>
+	<form action= "thankyou.html">
+	  
+	  Your name: <input type="text" name="firstandlastname"> <br>
+	              
+	              
+	<p>Reason for your visit?:<br>
+        <input type="radio" name="reason" value="tourism">tourism <br>
+        <input type="radio" name="reason" value="sports fan" checked="true">sports fan
+      </p>
+      
+      <p>
+        Sightseeing must haves:<br>
+        <input type="checkbox" name="extras[]" value="monument">monument checked<br>
+        <input type="checkbox" name="extras[]" value="white house" checked>white house checked<br>
+        <input type="checkbox" name="extras[]" value="Lincoln Memorial" checked>Lincoln Memorial checked<br>
+        <input type="checkbox" name="extras[]" value="The Tomb of the Unknown Soldier" checked>The Tomb of the Unknown Soldier checked<br>
+        <p>
+        planned arrival date to DC: <input type="date" name="date">
+      </p>
+              <p>Traveling From:<br>
+      Address: <input type="text" name="address"> <br>
+      City: <input type="text" name="city"><br>
+      State:<input type="text" name="state"><br>
+      Zip:<input type="text" name="zip"><br>
+      Phone:<input type="tel" name="phone"><br>
+      Email:<input type="text" name="email"><br>
+      </p>
+            <p>Special Requests:<br>
+        <textarea name="comments"></textarea>
+      </p>
+      
+      <p>Customer Comments about our website:<br>
+        <textarea name="comments"></textarea>
+      </p>
+      
+        <input type= "submit">
+      </p>
+	</form>
+
+</body>
+</html>
+
+

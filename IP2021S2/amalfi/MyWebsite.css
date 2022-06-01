@@ -1,0 +1,93 @@
+	body {
+			margin: 1px;
+			font-family: Georgia, Georgia, Georgia;
+			background-color:#FBFBF8;
+			color: black;
+			font-size:medium;
+		}
+		h1 {
+		  font-size: 2.0em;
+		  color: black;
+		}
+		h2 {
+		  font-size: 1.5em;
+		  color: black;
+		}
+
+		.topnav {
+			overflow: hidden;
+			background-color: #B0E4EA;
+			color: black;
+		}
+
+		.topnav a {
+			float: left;
+			color: black;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-size: 17px;
+			width: 17%; /* Five links of equal widths */
+		}
+
+		.topnav a:hover {
+			background-color: #dddddd;
+			color: black;
+		}
+
+		.topnav a.active {
+			background-color: #C2C5CC;
+			color: black;
+		}
+  	.col-container {
+	  display: flex;
+	  width: 100%
+  	}
+	  .col {
+	  flex: 1;
+	  padding: 16px;
+  	}
+  	.topnav a:hover {
+			background-color: #dddddd;
+			color: black;
+		}
+
+		.topnav a.active {
+			background-color: #C2C5CC;
+			color: white;
+		}
+		table, th, td{
+		  border: 1px solid #FBFBF8;
+		  border-collapse: collapse;
+		}
+	  form {
+	    padding: 10px;
+	    border: thick solid #C2C5CC;
+	    background-color: #C2C5CC;
+	    margin:20px;
+	  }
+	  form textarea {
+	    width: 500px;
+	    height: 50px;
+	  }
+	  table {
+	    margin-left: 20px;
+	    margin-right: 20px;
+	    border: thick solid #C2C5CC;
+	    caption-side: bottom;
+	    border-collapse: collapse;
+	  }
+	  td, th {
+	    border: thin dotted #C2C5CC;
+	    padding: 5px;
+	  }
+	  caption {
+	    font-style: italic;
+	    padding-top: 8px;
+	  }
+	  th {
+	    background-color: #FBFBF8
+;
+	  }
+	  .cellcolor {background-color: #C2C5CC;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>form</title>
+		<link type="text/css" rel="stylesheet" href="style.css">
+</head>
+<body>
+   <center><img src="assets/banner4.jpg"></center>
+  <!-- This page gives the viewer access to the creater's email, phone number, and other ways to contact us. -->
+	<div class="topnav">
+		<a href="index.html" >home</a>
+		<a href="list.html">information</a>
+		<a href="gallery.html">pictures</a>
+		<a href="table.html">climate</a>
+		<a href="form.html" class="active">contact</a>
+	</div>
+
+	<div style="padding-left:16px">
+		<h2>Interest Form</h2>
+		<p>Help us get to know you better!</p>
+	</div>
+
+<form action="thankyou.html" method="POST">
+  <p>
+    Please fill out this following form so that we can help you have the best stay! <br><br>
+    First name: <input type="text" name="firstname" value=""><br>
+    Last name: <input type="text" name="lastname" value=""><br>
+    How many guests? <select name="characters">
+      <option value="1">one</option>
+      <option value="2">two</option>
+      <option value="3">three</option>
+      <option value="4">four</option>
+      <option value="5">five</option>
+      <option vlaue="6+">six or more</option>
+    </select><br>
+    What's your budget? <input type="text" name="budget" value=""><br>
+    Specific Date? <input type="date"><br>
+    Any Kids? (below the age of 10) <input type="radio" name="yesorno" value="yes"> yes
+    <input type="radio" name="yesorno" value="no"> no <br>
+    Comments and concerns?<br> <textarea name="requests" rows="10" cols="48"></textarea><br><br>
+    <input type="submit">
+  </p>
+</form>
+
+</body>
+</html>
+
+

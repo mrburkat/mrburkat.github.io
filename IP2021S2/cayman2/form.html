@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>form</title>
+	<link type="text/css" rel="stylesheet" href="style.css">
+</head>
+<body>
+  <center><img src="assets/logo1.jpg"></center>
+  <!-- This page is our interest form that potential clients can fill out so we get to know their needs and desires.-->
+	<div class="topnav">
+		<a href="index.html">home</a>
+		<a href="gallery.html">pictures</a>
+		<a href="list.html">hotels and attractions</a>
+		<a href="table.html">beaches and temperatures</a>
+		<a href="form.html" class="active">interest form</a>
+	</div>
+
+	<div style="padding-left:16px">
+		<h2>Interest Form</h2>
+		<p>please fill out the following form so we can assess what is needed to make your trip the best it can be!</p>
+	</div>
+	
+	<form action="thankyou.html" method="POST">
+	  <p> Please fill out the following form so that we can make the best plan for your stay! <br><br>
+	  First name: <input type="text" name="firstname" value=""><br>
+	  Last name: <input type="text" name="lastname" value=""><br>
+	  How many guests? <select name="characters">
+	    <option value=""></option>
+	    <option value="1">one</option>
+	    <option value="2">two</option>
+	    <option value="3">three</option>
+	    <option value="4">four</option>
+	    <option value="5">five</option>
+	    <option value="6+">six or more</option>
+	  </select>
+	  <br>
+	  Any pets? <input type="radio" name="yesorno" value="yes"> yes
+	  <input type="radio" name="yesorno" value="no"> no
+	  <br>
+	  Price range: <input type="text" name="pricerange" value=""><br>
+	  Specific Date?: <input type="date"><br>
+	  Any other requests?<br> <textarea name="requests" rows="10" cols="48"></textarea> <br>
+	  <input type="submit">
+	  </p>
+	</form>
+
+</body>
+</html>
+
+

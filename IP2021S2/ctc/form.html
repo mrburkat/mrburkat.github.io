@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!--This will be the page with the form to fill out for information of thier trip.-->
+<html>
+<head>
+  <link type="text/css" rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form</title>
+
+</head>
+<body>
+  <img src="Assets/Banner 6.jpg">
+	<div class="topnav">
+		<a href="index.html" class="active">Home Page</a>
+		<a href="list.html">Activity List</a>
+		<a href="table.html">Local Establishments</a>
+		<a href="gallery.html">Photo Gallery</a>
+		<a href="form.html">Info Form</a>
+	</div>
+
+	<div style="padding-left:16p">
+		<h2>Informational Form to Sign up for a Trip</h2>
+		<p>Fill out this form so we can help you create a perfect trip.</p>
+	</div>
+
+
+<form action="thankyou.html">
+   <p> Information <br>
+      Name: <input type="text" name="name"> <br>
+      Address: <input type="text" name="address"> <br>
+      City: <input type="text" name="city"> <br>
+      State: <input type="text" name="state"> <br>
+      Zip: <input type="text" name="zip"> <br>
+      Phone: <input type="tel" name="phone"> <br>
+      
+      </p>
+      
+    <p>
+      Choose your activities:
+      <select name="activities">
+        <option value="Skiing">Skiing</option>
+        <option value="Snow Boarding">Snow Boarding</option>
+        <option value="Snow Tubing">Snow Tubing</option>
+        <option value="Ice Skating">Ice Skating</option>
+      </select>
+    </p>
+    
+    <p>Will it be staying for longer than one day: <br>
+    <input type="radio" name="Yes" value="Yes">Yes <br>
+    <input type="radio" name="No" checked="true" value="No">No
+    
+    </p>
+    <p>
+      How many people are in your party?: <input type="numbers" name="bags" min="1" max="10">
+      </p>
+      <p>
+      How many days will you be staying?: <input type="numbers" name="bags" min="1" max="10">
+    </p>
+    <p>
+      Arrival Date: <input type="date" name="date">
+    
+    
+    <p>
+      Extras: <br>
+      <input type="checkbox" name="extras[]" value="Meal Plan">Meal Plan Included<br>
+      <input type="checkbox" name="extras[]" value="catalog">Speed Pass
+    </p>
+    
+    <p>Customer Questions<br>
+      <textarea name="comments"></textarea>
+    </p>
+    
+    <p>
+        
+      <input type="submit" value="Submit">
+      </p>
+  
+  
+  
+</form>
+
+
+</body>
+</html>
+
+

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>template</title>
+		<link type="text/css" rel="stylesheet" href="style.css">
+</head>
+<body>
+  	<img src="assets/banner2.jpg" width=1400>
+	<div class="topnav">
+		<a href="home.html" class="active">Home</a>
+		<a href="list.html">Activities</a>
+		<a href="gallery.html">Photos</a>
+		<a href="table.html">The weather</a>
+		<a href="form.html">Contact us</a>
+	</div>
+
+
+	<div style="padding-left:16px">
+		<h2></h2>
+		<p></p>
+	</div>
+	
+	<form action="thankyou.html" method="GET">
+    <p>Choose your Shirt:</p>
+    <p>
+  <select name="Shirt">
+  <option value="Short Sleeve">Short Sleeve</option>
+  <option value="Long Sleeve">Long Sleeve</option>
+  </select>
+  </p>
+  <p>Type: <br></p>
+  <p>
+  <input type="radio" name="U" value="Neck">U Neck<br>
+  <input type="radio" name="V" value="Neck">V Neck<br>
+  </p>
+  <p>Size: <br></p>
+  <p>
+  <input type="radio" name="Small" value="Neck">Small<br>
+  <input type="radio" name="Medium" value="Neck">Medium<br>
+  <input type="radio" name="Large" value="Neck">Large<br>
+  <input type="radio" name="Extra-Large" value="Neck">Extra-Large<br>
+  </p>
+  <p>Number of Shirts: </p>
+  <p>
+  <input type="number" name="bags" min="1" max="10">
+  </p>
+ 
+  <p>Must arrive by date:</p>
+  <p>
+  <input type="date" name="date">
+  </p>
+
+  <p>Extras: </p><br>
+  <p>
+  <input type="checkbox" name="extras[]" value="Stickers">Stickers<br>
+  <input type="checkbox" name="extras[]" value="Wrist Bands" checked>Wristbands
+  </p>
+ 
+  <p>Ship to:</p> <br>
+  <p>
+  Name: <input type="text" name="name"> <br>
+  Address: <input type="text" name="address"> <br>
+  City: <input type="text" name="city"> <br>
+  State: <input type="text" name="state"> <br>
+  Zip: <input type="text" name="zip"> <br>
+  Phone: <input type="tel" name="phone"> <br>
+  </p>
+ 
+  <p>Additional Needs:</p> <br>
+  <p>
+  <textarea name="comments"></textarea>
+  </p>
+ 
+  <p>
+  <input type="submit" value="Order Now"> <br>
+  </p>
+ 
+</form>
+
+
+</body>
+</html>

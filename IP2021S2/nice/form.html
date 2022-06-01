@@ -1,0 +1,77 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>form</title>
+<link type ="text/css" rel="stylesheet" href="travelwebsite.css">
+</head>
+<body>
+  <center>
+  <img src="assets/Nice Banner 2.jpg" >
+  </center>
+
+	<div class="vertical-menu">
+		<a href="index.html">Home</a>
+		<a href="gallery.html">Gallery/Attractions</a>
+		<a href="table.html">Weather</a>
+		<a href="list.html">Hotels</a>
+		<a href="form.html" class="active">Join Us!!</a>
+	</div>
+	<!-- Interactive form-->
+	<!-- Have to put in information-->
+	<!-- ^ personal info: phone number, ZIP, city, state, credit card info-->
+	<h1>Join Us!!</h1>
+	<form action= "thankyou.html">
+    <div class="tabelrow">
+      <p>
+        Number of Tickets: <input type= "number" name= "tickets" min= "1" max= "50">
+      </p>
+    </div>
+      
+    <div class="tabelrow">
+      <p>
+        Arrival Date <input type= "date" name= "date">
+      </p>
+    </div>
+    <div class="tabelrow">
+      <p>
+        Departure Date <input type= "date" name= "date">
+      </p>
+    </div>
+    
+    <div class="tabelrow">
+      <p>
+        Where would you like to stay?:
+        <select name= "Hotels">
+        <option value= "Negrsco">Hotel Le Negrsco</option>
+        <option value= "Palais">Hyatt Regency Nice Palais de la Mediterranee</option>
+        <option value= "Promenade">Residhome Nice Promenade</option>
+        <option value= "Suisse">Hotel Suisse</option>
+        </select>
+      </p>
+    </div>
+    
+   <div class="tabelrow"></div>
+      <p> Personal Information: <br>
+        Name: <input type = "text" name= "name"> <br>
+        Address: <input type = "text" name= "address"> <br>
+        City: <input type = "text" name= "city"> <br>
+        State: <input type = "text" name= "state"> <br>
+        Zip: <input type = "text" name= "zip"> <br>
+        Phone: <input type = "tel" name= "phone"> <br>
+      </p>
+  
+    <div class="tabelrow">
+      <p> Customer Comments: <br>
+        <textarea name="comments"></textarea>
+      </p>
+    </div>
+    
+    <div class="tabelrow">
+      <p>
+        <input type = "submit" name= "Order Now"> <br>
+      </p>
+    </div>
+    
+	</form>
+</body>
+</html>

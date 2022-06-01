@@ -1,0 +1,109 @@
+ body {
+          margin-left:10px;
+          margin-right:10px;
+          font-family: 'Athiti';
+          background-color:#white ;
+        	color: black;
+        	font-size: 100%;
+   
+ }
+  	body {
+			margin: 0;
+			font-family:'Athiti';
+			background-color:#white;
+			color: #000000;
+		}
+h2 {
+  color:lightblue;
+}
+
+ a {
+			float: left;
+			color: #f2f2f2;
+			text-align: center;
+			padding left: 400px;
+			text-decoration: none;
+			font-size: 17px;
+			width: 17%;
+		}
+	.topnav {
+			overflow: hidden;
+			background-color: black;
+}
+		.topnav a:hover {
+			background-color: #ADD8E6;
+			color: black;
+		}
+
+		.topnav a.active {
+			background-color: #ADD8E6;
+			color: white;
+		}
+		
+		
+	
+table {
+  
+margin-left: 50px;
+margin-right: 50px;
+border: thin solid black;
+caption-side: bottom;
+}
+td, th {
+border: thin solid black;
+padding: 5px;
+}
+caption {
+padding-top: 5px;
+}
+
+.center {
+  text-align: center;
+  
+}
+
+.right {
+  text-align:right;
+}
+
+th { background-color: #white; }
+.cellcolor { background-color: #D6B8CA; }
+
+.cellcolo {background-color:lightblue;}
+
+img {
+  margin-left:center;
+  margin-right:center;
+  display:block;
+}
+
+iframe{
+  margin-left:auto;
+  margin-right:auto;
+  display:block;
+}
+
+.column {
+  float: left;
+  width:33.33%;
+  padding:5px;
+
+}
+
+.row::after {
+  content:"";
+  clear:both;
+  display:table;
+}
+
+form {
+  padding: 10px;
+  border: thick line;
+  background-color:lightblue;
+  margin:20px;
+}
+
+form textarea {
+  width:500px;
+  height:150px;
+}

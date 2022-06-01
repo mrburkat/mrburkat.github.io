@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Singapore</title>
+	<link href='https://fonts.googleapis.com/css?family=Chonburi' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Darker Grotesque' rel='stylesheet'>
+	<link type="text/css" rel="stylesheet" href="style.css">
+</head>
+
+<!--place to fill out name, email, questions, etc.-->
+
+<body>
+  <img src="assets/banner3.jpg" width=1366>
+	<div class="topnav">
+		<a href="index.html" class="active">Home</a>
+		<a href="list.html">Activities</a>
+		<a href="table.html">Weather</a>
+		<a href="gallery.html">Gallery</a>
+		<a href="form.html">Survey</a>
+	</div>
+
+	<div style="padding-left:16px">
+		<h2>Survey</h2>
+		<p>Please fill out the form below!</p>
+	</div>
+	
+  <form action="thankyou.html" method="GET">
+      
+      <p>Contact Info<br>
+          Name: <input type="text" name="name"> <br>
+          Phone: <input type="tel" name="phone"> <br>
+          Email: <input type="email" name="email"> <br>
+          Address: <input type="text" name="address"> <br>
+          City: <input type="text" name="city"> <br>
+          State: <input type="text" name="state"> <br>
+          Zip: <input type="text" name="zip">
+      </p>
+      
+      <p>
+        Favorite Page:
+        <select name="Page">
+          <option value="Home">Home</option>
+          <option value="Activities">Activities</option>
+          <option value="Weather">Weather</option>
+          <option value="Gallery">Gallery</option>
+        </select>
+      </p>
+      
+      <p>Has This Website Been Helpful?<br>
+        <input type="radio" name="want" value="want">YES<br>
+        <input type="radio" name="want" value="want">NO
+      </p>
+      
+      <p>
+        Rate our Website: <input type="number" name="stars" min="0" max="5">
+      </p>
+      
+      <p>
+        Do You Want to Purchase Some Merchandise<br>
+        <input type="checkbox" name="extras[]" value="T-Shirt">T-shirt<br>
+        <input type="checkbox" name="extras[]" value="Hoodie">Hoodie<br>
+        <input type="checkbox" name="extras[]" value="Mug">Mug
+      </p>
+      
+      <p>Questions and Suggestions: <br>
+          <textarea name="comments"></textarea>
+      </p>
+      
+      <p>
+        <input type="submit" value="Submit">
+      </p>
+      
+    </form>
+
+</body>
+</html>
+
+
